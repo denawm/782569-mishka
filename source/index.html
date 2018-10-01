@@ -203,5 +203,32 @@
         Разработано 
       </a>
     </footer>
+    <section class="modal-basket">
+      <h1 class="modal-basket__title">
+        Добавить в корзину
+      </h1>
+      <div class="modal-basket__wrapper">
+        <form class="modal-basket__form" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма отправки">
+          <p class="modal-basket__text">
+            Выберите размер:
+          </p>
+          <ul class="modal-basket__list size-list">
+            <li class="size-list__item">
+              <input class="size-list__radio visually-hidden" type="checkbox" name="size-s" id="size-small" checked>
+              <label for="size-small">S</label>
+            </li>
+            <li class="size-list__item">
+              <input class="size-list__radio visually-hidden" type="checkbox" name="size-m" id="size-medium" checked>
+              <label for="size-medium">M</label>
+            </li>
+            <li class="size-list__item">
+              <input class="size-list__radio visually-hidden" type="checkbox" name="size-l" id="size-large" checked>
+              <label for="size-large">L</label>
+            </li>
+          </ul>
+          <button class="modal-basket__btn button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
