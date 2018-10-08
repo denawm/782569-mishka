@@ -6,6 +6,14 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
+
+gulp.task("html", function () {
+ return gulp.src("source/index.html")
+ .pipe(posthtml([include]))
+ .pipe(gulp.dest("build"));
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
