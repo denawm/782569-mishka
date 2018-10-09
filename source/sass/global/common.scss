@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 330px;
+
+  font-family: $font-base;
+  font-size: $font-size;
+  color: $font-color;
+
+  background: $main-color;
+  }
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header{
+  @include wrapper;
+}
+
+.modal-basket{
+  display: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

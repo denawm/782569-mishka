@@ -1,7 +1,23 @@
 .offer-list{
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-base;
   list-style: none;
+  color: $offer-color;
 }
 
+.offer-list__item{
+  padding: 30px;
+}
+
+.offer-list__text{
+  margin: 0;
+  padding: 0;
+  width: 100px;
+
+  line-height: 24px;
+}
 .offer-list__item--interior{
    background: #63d1bb;
 }
