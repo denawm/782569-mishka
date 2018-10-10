@@ -1,4 +1,4 @@
-.site-list{
+.site-list {
   margin: 0;
   padding: 0;
 
@@ -6,7 +6,7 @@
   list-style: none;
 }
 
-.site-list__a{
+.site-list__a {
   font-family: $font-base;
   color: $font-color;
   font-size: $font-size;
@@ -15,15 +15,15 @@
   text-decoration: none;
 }
 
-.site-list__item{
+.site-list__item {
   padding: 30px 20px 30px 75px;
   border-top: 1px solid #ececec;
 }
 
-.site-list__item--logo{
+.site-list__item--logo {
   padding: 30px 20px 30px 110px;
 }
 
-.site-list__item--basket{
+.site-list__item--basket {
   border-bottom: 1px solid #ececec;
 }
