@@ -19,10 +19,6 @@ img {
   @include wrapper;
 }
 
-.modal-basket {
-  display: none;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
