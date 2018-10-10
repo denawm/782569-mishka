@@ -1,4 +1,4 @@
-.page-footer{
+.page-footer {
   font-family: $font-base;
   color: $font-color;
   font-size: $font-size;
@@ -8,12 +8,12 @@
   @include wrapper;
 }
 
-.page-footer__wrapper{
+.page-footer__wrapper {
   padding: 0 30px;
   padding-bottom: 0;
 }
 
-.page-footer__devoloper{
+.page-footer__devoloper {
   margin-left: 40px;
 
   font-size: 19px;

@@ -1,4 +1,4 @@
-.contacts-list{
+.contacts-list {
   padding: 25px 0;
   padding-bottom: 0;
   margin: 0;
@@ -10,20 +10,20 @@
   list-style: none;
 }
 
-.contacts-list__label{
+.contacts-list__label {
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
 }
 
-.contacts-list__label--color{
+.contacts-list__label--color {
   line-height: 16px;
   color: #63d1bb;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.contacts-list__text{
+.contacts-list__text {
   font-size: 17px;
   line-height: 18px;
 
@@ -31,7 +31,7 @@
   border-bottom: 2px solid black;
 }
 
-.contacts-list__textarea{
+.contacts-list__textarea {
   padding: 15px 10px;
   width: 236px;
 

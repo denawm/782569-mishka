@@ -1,16 +1,16 @@
-.about-us{
+.about-us {
   font-family: $font-base;
   color: $font-color;
   font-size: $font-size;
   @include wrapper;
 }
 
-.about-us__wrapper{
+.about-us__wrapper {
   padding: 30px;
   padding-bottom: 0;
 }
 
-.about-us__title{
+.about-us__title {
   margin: 0;
   margin-bottom: 85px;
   padding: 0;
@@ -19,33 +19,33 @@
   line-height: 30px;
 }
 
-.about-us__list{
+.about-us__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.about-us__list-item{
+.about-us__list-item {
   margin-bottom: 85px;
 
   line-height: 20px;
   font-weight: bold;
 }
 
-.about-us__list-item--clear{
+.about-us__list-item--clear {
   width: 190px;
 }
 
-.about-us__list-item--price{
+.about-us__list-item--price {
   width: 200px;
 }
 
-.about-us__list-item--like{
+.about-us__list-item--like {
   width: 200px;
 }
 
-.about-us__list-item--clew{
+.about-us__list-item--clew {
   width: 215px;
 }
 

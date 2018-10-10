@@ -1,4 +1,4 @@
-.catalog{
+.catalog {
   font-family: $font-base;
   color: $font-color;
   font-size: $font-size;
@@ -6,11 +6,11 @@
   @include wrapper;
 }
 
-.catalog__wrapper{
+.catalog__wrapper {
   padding: 30px;
 }
 
-.catalog__title{
+.catalog__title {
   margin: 0;
   padding: 75px 40px;
   background: #f1f1f1;
@@ -20,6 +20,6 @@
   line-height: 30px;
 }
 
-.catalog__cart{
+.catalog__cart {
   margin-bottom: 30px;
 }

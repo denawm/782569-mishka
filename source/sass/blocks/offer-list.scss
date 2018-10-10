@@ -1,4 +1,4 @@
-.offer-list{
+.offer-list {
   margin: 0;
   padding: 0;
 
@@ -7,21 +7,22 @@
   color: $offer-color;
 }
 
-.offer-list__item{
+.offer-list__item {
   padding: 30px;
 }
 
-.offer-list__text{
+.offer-list__text {
   margin: 0;
   padding: 0;
   width: 100px;
 
   line-height: 24px;
 }
-.offer-list__item--interior{
+
+.offer-list__item--interior {
   background: #63d1bb;
 }
 
-.offer-list__item--toys{
+.offer-list__item--toys {
   background: #56c3b2;
 }

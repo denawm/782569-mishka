@@ -10,16 +10,16 @@ body {
   background: $main-color;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
-.page-header{
+.page-header {
   @include wrapper;
 }
 
-.modal-basket{
+.modal-basket {
   display: none;
 }
 
