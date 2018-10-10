@@ -7,7 +7,7 @@
 
 .about-us__wrapper{
   padding: 30px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .about-us__title{
@@ -36,18 +36,23 @@
 .about-us__list-item--clear{
   width: 190px;
 }
+
 .about-us__list-item--price{
   width: 200px;
 }
+
 .about-us__list-item--like{
   width: 200px;
 }
+
 .about-us__list-item--clew{
   width: 215px;
 }
+
 .about-us__list-item--rocket{
   width: 255px;
 }
+
 .about-us__list-item--gift{
   width: 210px;
   margin-bottom: 60px;
