@@ -1,0 +1,63 @@
+.form-list{
+  font-family: $font-base;
+  color: $font-color;
+  font-size: $font-size;
+
+  @include wrapper;
+}
+
+.form-list__title{
+  margin: 0;
+  padding: 75px 35px;
+  background: #f1f1f1;
+
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.form-list_text{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.form-list__wrapper{
+  padding: 25px 30px;
+}
+
+.form-list__legend{
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.form-list__block{
+  padding: 0;
+  margin: 0;
+
+  border: none;
+}
+
+.form-list__required-text{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form-list__btn{
+  padding: 15px 45px;
+  margin-bottom: 25px;
+
+  font-family: $font-base;
+  font-size: $font-size;
+
+  background: none;
+}
