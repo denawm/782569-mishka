@@ -1,11 +1,13 @@
 .offers {
   color: $font-color;
   font-family: $font-base;
+
   @include wrapper;
 }
 
 .offers_wrapper {
   padding-top: 80px;
+
   background: url(../img/hero-mobile@1x.jpg) no-repeat 50% 0;
 }
 

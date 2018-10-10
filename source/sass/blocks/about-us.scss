@@ -2,6 +2,7 @@
   font-family: $font-base;
   color: $font-color;
   font-size: $font-size;
+
   @include wrapper;
 }
 
@@ -49,11 +50,11 @@
   width: 215px;
 }
 
-.about-us__list-item--rocket{
+.about-us__list-item--rocket {
   width: 255px;
 }
 
-.about-us__list-item--gift{
+.about-us__list-item--gift {
   width: 210px;
   margin-bottom: 60px;
 }
