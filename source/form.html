@@ -9,21 +9,8 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button">
-            Открыть меню
-          </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__a" href="catalog.html">
-                Каталог товаров
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__a">
-                Вязание на заказ
-              </a>
-            </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--logo">
               <a class="site-list__logo" href="index.html">
                 <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.589px" height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034" xml:space="preserve">
                   <g>
@@ -38,15 +25,28 @@
                   </g>
                 </svg>
               </a>
+              <button class="main-nav__toggle" type="button">
+                Открыть меню
+              </button>
             </li>
             <li class="site-list__item">
+              <a class="site-list__a" href="catalog.html">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__a">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--search">
               <form action="https://echo.htmlacademy.ru" method="get">
                 <input class="site-list__search" type="search" name="search"   placeholder="Поиск по сайту" id="search">
                 <button class="site-list__search-submit" type="submit">
                 </button>
               </form>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--basket">
               <a class="site-list__a" href="">
                 Корзина: <span class="site-list__basket">пока пуста</span>
               </a>

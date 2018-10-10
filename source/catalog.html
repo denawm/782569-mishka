@@ -9,21 +9,8 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button">
-            Открыть меню
-          </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__a">
-                Каталог товаров
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__a" href="form.html">
-                Вязание на заказ
-              </a>
-            </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--logo">
               <a class="site-list__logo" href="index.html">
                 <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.589px" height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034" xml:space="preserve">
                   <g>
@@ -38,15 +25,28 @@
                   </g>
                 </svg>
               </a>
+              <button class="main-nav__toggle" type="button">
+                Открыть меню
+              </button>
             </li>
             <li class="site-list__item">
+              <a class="site-list__a">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__a" href="form.html">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--search">
               <form action="https://echo.htmlacademy.ru" method="get">
                 <input class="site-list__search" type="search" name="search"   placeholder="Поиск по сайту" id="search">
                 <button class="site-list__search-submit" type="submit">
                 </button>
               </form>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--basket">
               <a class="site-list__a" href="">
                 Корзина: <span class="site-list__basket">пока пуста</span>
               </a>
@@ -65,65 +65,73 @@
         <div class="catalog__wrapper">
           <div class="catalog__cart item-cart">
             <figure class="item-cart__image">
-              <img src="" height="" width="" alt="Зайчик попрыгайчик">
+              <img src="img/photo-hare-mobile@1x.jpg" height="" width="" alt="Зайчик попрыгайчик">
             </figure>
-            <h3 class="item-cart__name">
-              Зайчик попрыгайчик
-            </h3>
-            <p class="item-cart__text">
-              Рост 30см, вес 200г
-            </p>
-            <b class="item-cart__price">
-              1200 руб.
-            </b>
-            <a class="item-cart__basket-btn" aria-label="Добавить в корзину">
-            </a>
+            <div class="item-cart__wrapper">
+              <h3 class="item-cart__name">
+                Зайчик попрыгайчик
+              </h3>
+              <p class="item-cart__text">
+                Рост 30см, вес 200г
+              </p>
+              <b class="item-cart__price">
+               1200 руб.
+              </b>
+              <a class="item-cart__basket-btn" aria-label="Добавить в корзину">
+              </a>
+            </div>
           </div>
           <div class="catalog__cart item-cart">
             <figure class="item-cart__image">
-              <img src="" height="" width="" alt="Корзинка для белья">
+              <img src="img/photo-bowl-mobile@1x.jpg" height="" width="" alt="Корзинка для белья">
             </figure>
-            <h3 class="item-cart__name">
-              Корзинка для белья
-            </h3>
-            <p class="item-cart__text">
-              Диаметр 15см, высота 10см
-            </p>
-            <b class="item-cart__price">
-              690 руб.
-            </b>
-            <a class="item-cart__basket-btn" aria-label="Добавить в корзину">
-            </a>
+            <div class="item-cart__wrapper">
+              <h3 class="item-cart__name">
+                Корзинка для белья
+              </h3>
+              <p class="item-cart__text">
+                Диаметр 15см, высота 10см
+              </p>
+              <b class="item-cart__price">
+                690 руб.
+              </b>
+              <a class="item-cart__basket-btn" aria-label="Добавить в корзину">
+              </a>
+            </div>
           </div>
           <div class="catalog__cart item-cart">
             <figure class="item-cart__image">
-              <img src="" height="" width="" alt="Большая корзинка для игрушек">
+              <img src="img/photo-toys-mobile@1x.jpg" height="" width="" alt="Большая корзинка для игрушек">
             </figure>
-            <h3 class="item-cart__name">
-              Большая корзинка для игрушек
-            </h3>
-            <p class="item-cart__text">
-              Диаметр 30 см, высота 30 см
-            </p>
-            <b class="item-cart__price">
-              1500 руб.
-            </b>
-            <a class="item-cart__basket-btn" aria-label="Добавить в корзину">
-            </a>
+            <div class="item-cart__wrapper">
+              <h3 class="item-cart__name">
+                Большая корзинка для игрушек
+              </h3>
+              <p class="item-cart__text">
+                Диаметр 30 см, высота 30 см
+              </p>
+              <b class="item-cart__price">
+                1500 руб.
+              </b>
+              <a class="item-cart__basket-btn" aria-label="Добавить в корзину">
+              </a>
+            </div>
           </div>
-          <div class="catalog__cart process-cart">
-            <h3 class="process-cart__name">
+          <div class="catalog__cart item-cart item-cart--video">
+            <h3 class="item-cart--video__name">
               Процесс производства
             </h3>
-            <video class="process-cart__video">
+            <video class="item-cart--video__video" poster="img/video-mobile@1x.jpg">
               <source src="URL">
             </video>
-            <p class="process-cart__text">
-              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-            </p>
-            <a class="process-cart__btn button" href="">
-              Сделать заказ
-            </a>
+            <div class="item-cart--video__wrapper">
+              <p class="item-cart--video__text">
+                По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+              </p>
+              <a class="item-cart--video__btn button" href="">
+                Сделать заказ
+              </a>
+            </div>
           </div>
         </div>
       </section>

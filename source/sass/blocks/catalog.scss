@@ -1,0 +1,27 @@
+.catalog{
+  font-family: $font-base;
+  color: $font-color;
+  font-size: $font-size;
+
+  @include wrapper;
+}
+
+.catalog__header{
+  padding: 75px 40px;
+  background: #f1f1f1;
+}
+
+.catalog__wrapper{
+  padding: 30px;
+}
+
+.catalog__title{
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+}
+
+.catalog__cart{
+  margin-bottom: 30px;
+}
