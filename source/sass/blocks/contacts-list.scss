@@ -1,0 +1,40 @@
+.contacts-list {
+  padding: 25px 0;
+  padding-bottom: 0;
+  margin: 0;
+
+  font-family: $font-base;
+  color: $font-color;
+  font-size: $font-size;
+
+  list-style: none;
+}
+
+.contacts-list__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.contacts-list__label--color {
+  line-height: 16px;
+  color: #63d1bb;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contacts-list__text {
+  font-size: 17px;
+  line-height: 18px;
+
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.contacts-list__textarea {
+  padding: 15px 10px;
+  width: 236px;
+
+  border: 2px solid black;
+  resize: none;
+}
