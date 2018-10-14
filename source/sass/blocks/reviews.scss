@@ -7,13 +7,12 @@
 }
 
 .reviews__wrapper {
-  padding: 0 30px;
   padding-bottom: 45px;
 }
 
 .reviews__title {
-  margin: 0;
-  padding: 0;
+  @include reset;
+
   margin-bottom: 35px;
 
   font-size: 25px;
@@ -21,13 +20,12 @@
 }
 
 .reviews__quote {
-  margin: 0;
-  padding: 0;
+ @include reset-list;
 }
 
 .reviews__text {
-  margin: 0;
-  padding: 0;
+  @include reset;
+
   margin-bottom: 35px;
   width: 265px;
 
@@ -41,14 +39,14 @@
 }
 
 .reviews__inst {
-  margin: 0;
-  padding: 0;
+  @include reset;
 
   line-height: 30px;
   color: #444444;
 }
 
 .reviews__btn {
+  @include reset-list;
+
   margin: 30px 0;
-  padding: 0;
 }

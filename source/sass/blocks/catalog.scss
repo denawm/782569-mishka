@@ -3,7 +3,7 @@
   color: $font-color;
   font-size: $font-size;
 
-  @include wrapper;
+  @include wrapper-max;
 }
 
 .catalog__wrapper {

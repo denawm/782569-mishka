@@ -3,7 +3,7 @@
   color: $font-color;
   font-size: $font-size;
 
-  @include wrapper;
+  @include wrapper-max;
 }
 
 .contacts__wrapper {
@@ -11,9 +11,9 @@
 }
 
 .contacts__table {
-  margin: 0;
+  @include reset;
+
   margin-top: 35px;
-  padding: 0;
 
   font-size: 15px;
   line-height: 30px;

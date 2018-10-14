@@ -5,12 +5,11 @@
 
   background: $footer-color;
 
-  @include wrapper;
+  @include wrapper-max;
 }
 
 .page-footer__wrapper {
   padding: 0 30px;
-  padding-bottom: 0;
 }
 
 .page-footer__devoloper {

@@ -2,7 +2,7 @@
   color: $font-color;
   font-family: $font-base;
 
-  @include wrapper;
+  @include wrapper-max;
 }
 
 .offers_wrapper {
@@ -12,9 +12,10 @@
 }
 
 .offers__title {
-  margin: 0 38px;
+  @include reset;
+
+  margin: 0 5px;
   margin-bottom: 115px;
-  padding: 0;
 
   font-size: 27px;
   line-height: 30px;

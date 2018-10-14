@@ -3,7 +3,7 @@
   color: $font-color;
   font-size: $font-size;
 
-  @include wrapper;
+  @include wrapper-max;
 }
 
 .form-list__title {
@@ -17,12 +17,13 @@
 }
 
 .form-list_text {
-  margin: 0;
-  padding: 0;
+  @include reset;
+
   margin-bottom: 20px;
 
   font-size: 13px;
   line-height: 24px;
+  color: #444444;
 }
 
 .form-list__wrapper {
@@ -44,8 +45,8 @@
 }
 
 .form-list__required-text {
-  padding: 0;
-  margin: 0;
+  @include reset;
+
   margin-bottom: 30px;
 
   font-size: 14px;

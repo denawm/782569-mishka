@@ -7,12 +7,11 @@
 }
 
 .product-week__wrapper {
-  padding: 30px;
+  padding-top: 30px;
 }
 
 .product-week__title {
-  margin: 0;
-  padding: 0;
+  @include reset-list;
 
   font-size: 25px;
   line-height: 30px;
@@ -20,8 +19,7 @@
 }
 
 .product-week__subtitle {
-  margin: 0;
-  padding: 0;
+  @include reset;
 
   font-size: 17px;
   line-height: 20px;
@@ -31,8 +29,9 @@
 }
 
 .product-week__text {
+  @include reset;
+
   margin: 20px 0;
-  padding: 0;
   width: 260px;
 
   font-size: 15px;

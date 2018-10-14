@@ -9,16 +9,15 @@
 }
 
 .item-cart__name {
-  margin: 0;
-  padding: 0;
+  @include reset;
 
   font-size: 17px;
   line-height: 24px;
 }
 
 .item-cart__text {
-  margin: 0;
-  padding: 0;
+  @include reset;
+
   margin-bottom: 40px;
 
   font-size: 13px;
@@ -32,8 +31,7 @@
 }
 
 .item-cart__image {
-  margin: 0;
-  padding: 0;
+  @include reset;
 }
 
 .item-cart__wrapper {
@@ -49,8 +47,8 @@
 }
 
 .item-cart--video__text {
-  padding: 0;
-  margin: 0;
+  @include reset;
+
   width: 190px;
   margin-bottom: 30px;
 

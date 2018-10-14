@@ -1,0 +1,9 @@
+.page-header {
+  @include wrapper-max;
+}
+
+@media (min-width: $tablet-width){
+  .page-header{
+    @include wrapper-tablet-max;
+  }
+}

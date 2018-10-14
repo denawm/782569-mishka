@@ -7,22 +7,21 @@
 }
 
 .about-us__wrapper {
-  padding: 30px;
+  padding-top: 30px;
   padding-bottom: 0;
 }
 
 .about-us__title {
-  margin: 0;
+  @include reset;
+
   margin-bottom: 85px;
-  padding: 0;
 
   font-size: 25px;
   line-height: 30px;
 }
 
 .about-us__list {
-  margin: 0;
-  padding: 0;
+  @include reset;
 
   list-style: none;
 }
