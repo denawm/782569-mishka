@@ -1,17 +1,1 @@
-.page-header {
-  @include wrapper-max;
 
-  background: #ffffff;
-}
-
-@media (min-width: $tablet-width){
-  .page-header{
-    @include wrapper-tablet-max;
-  }
-}
-
-@media (min-width: $desktop-width){
-  .page-header{
-    width: auto;
-  }
-}

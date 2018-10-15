@@ -29,11 +29,14 @@
   padding: 35px 115px;
 
   background: $offer-color;
+
 }
 
 .main-nav__wrapper {
   display: flex;
   flex-direction: column;
+
+  @include wrapper-max;
 }
 
 .main-nav__toggle {
@@ -47,6 +50,8 @@
   }
 
   .main-nav__wrapper {
+    @include wrapper-tablet-max;
+
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -79,7 +84,7 @@
 
 @media (min-width: $desktop-width) {
 
-  .main-nav {
+  .main-nav__wrapper {
     @include wrapper-desktop-max;
   }
 

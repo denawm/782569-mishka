@@ -15,6 +15,14 @@ img {
   height: auto;
 }
 
+.page-header {
+  background: #ffffff;
+}
+
+.page-main {
+  background: #f9f9f9;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
