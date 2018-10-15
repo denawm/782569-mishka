@@ -33,3 +33,15 @@
   margin: 0 auto;
   padding: 0;
 }
+
+@mixin wrapper-desktop {
+  width: 1050px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+@mixin wrapper-desktop-max {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 0;
+}
