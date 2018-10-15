@@ -8,3 +8,7 @@ $footer-color: #f1f1f1;
 
 $tablet-width: 768px;
 $desktop-width: 1250px;
+
+@media (min-width: $tablet-width) {
+}
+@media (min-width: $desktop-width) {}

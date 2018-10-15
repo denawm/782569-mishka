@@ -21,3 +21,40 @@
   line-height: 30px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+
+  .offers {
+    @include wrapper-tablet;
+  }
+
+  .offers_wrapper {
+    padding-top: 90px;
+    background: url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
+  }
+
+  .offers__title {
+    @include reset;
+
+    margin-bottom: 365px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+@media (min-width: $desktop-width) {
+
+  .offers {
+    @include wrapper-desktop;
+  }
+
+  .offers_wrapper {
+    padding-top: 95px;
+    background: url("../img/hero-desktop@1x.jpg") no-repeat 50% 0;
+  }
+
+  .offers__title {
+    margin-bottom: 345px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

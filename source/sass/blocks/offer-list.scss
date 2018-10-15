@@ -1,6 +1,9 @@
 .offer-list {
   @include reset;
 
+  display: flex;
+  flex-direction: column;
+
   font-family: $font-base;
   list-style: none;
   color: $offer-color;
@@ -8,14 +11,17 @@
 
 .offer-list__item {
   padding: 30px;
+  padding-right: 163px;
 }
 
 .offer-list__text {
   @include reset;
 
-  width: 100px;
+  width: 135px;
 
+  font-size: 19px;
   line-height: 24px;
+  font-weight: bold;
 }
 
 .offer-list__item--interior {
@@ -25,3 +31,25 @@
 .offer-list__item--toys {
   background: #56c3b2;
 }
+
+@media (min-width: $tablet-width) {
+  .offer-list {
+    flex-direction: row;
+  }
+
+  .offer-list__item {
+    padding-left: 36px;
+  }
+
+  .offer-list__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (min-width: $desktop-width) {
+
+  .offer-list__item {
+    padding-right: 353px;
+  }
+}
+
