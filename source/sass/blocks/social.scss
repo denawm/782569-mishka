@@ -1,5 +1,6 @@
 .social {
   padding: 30px 0px 30px 60px;
+  display: flex;
 
   background: $footer-color;
   border-bottom: 1px solid #e5e5e5;
@@ -13,4 +14,17 @@
 
   background: blue;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 60px 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding: 60px 100px;
+  }
+}
+
 

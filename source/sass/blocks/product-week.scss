@@ -107,6 +107,7 @@
 
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .product-week__title {
@@ -150,7 +151,7 @@
   }
 
   .product-week__price-wrapper {
-    margin-top: -125px;
+    margin-top: -145px;
   }
 
   .product-week__title-wrapper {
