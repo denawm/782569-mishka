@@ -3,10 +3,15 @@
   color: $font-color;
   font-size: $font-size;
 
-  @include wrapper;
+  background: $offer-color;
 }
 
 .about-us__wrapper {
+  @include wrapper;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
   padding-top: 30px;
   padding-bottom: 0;
 }
@@ -23,37 +28,81 @@
 .about-us__list {
   @include reset;
 
+  display: flex;
+  flex-direction: column;
   list-style: none;
-}
-
-.about-us__list-item {
-  margin-bottom: 85px;
 
   line-height: 20px;
   font-weight: bold;
 }
 
-.about-us__list-item--clear {
-  width: 190px;
-}
-
-.about-us__list-item--price {
+.about-us__list-item {
+  margin-bottom: 85px;
   width: 200px;
-}
 
-.about-us__list-item--like {
-  width: 200px;
-}
-
-.about-us__list-item--clew {
-  width: 215px;
-}
-
-.about-us__list-item--rocket {
-  width: 255px;
+  &--clear {
+    width: 190px;
+  }
+  &--clew {
+    width: 215px;
+  }
+  &--rocket {
+    width: 255px;
+  }
 }
 
 .about-us__list-item--gift {
   width: 210px;
   margin-bottom: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__wrapper {
+    @include wrapper-tablet;
+
+    padding-top: 55px;
+  }
+
+  .about-us__title {
+    width: 100%;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__list-item {
+    margin-bottom: 85px;
+    width: 215px;
+    &--price {
+      width: 240px;
+    }
+    &--clew {
+      width: 255px;
+    }
+    &--rocket {
+      width: 300px;
+    }
+    &--gift{
+      width: 240px;
+    }
+  }
+
+  .about-us__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: $desktop-width) {
+  .about-us__wrapper {
+    width: 700px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
