@@ -114,7 +114,7 @@
   .item-cart__video-name {
     order: 2;
     font-size: 20px;
-    margin: 40px 25px 0px 105px;
+    margin: 40px 25px 0 105px;
   }
 
   .item-cart__video-wrapper {
@@ -132,13 +132,12 @@
   .item-cart__video-btn {
     padding: 12px 220px;
   }
-
 }
+
 @media (min-width: $desktop-width) {
   .item-cart__wrapper {
-    margin-left: auto;
-    padding: 25px;
     margin: 0;
+    padding: 25px;
     margin-top: auto;
   }
 

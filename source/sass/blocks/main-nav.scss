@@ -6,13 +6,13 @@
   background: #ffffff;
 }
 
-.main-nav__logo{
+.main-nav__logo {
   display: inline-block;
   width: 113px;
   height: 46px;
 }
 
-.main-nav__text{
+.main-nav__text {
   @include reset;
 
   margin-top: 20px;
@@ -29,7 +29,6 @@
   padding: 35px 115px;
 
   background: $offer-color;
-
 }
 
 .main-nav__wrapper {
@@ -44,7 +43,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .catalog-body .main-nav {
     background: #f1f1f1;
   }
@@ -87,7 +85,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .main-nav__wrapper {
     @include wrapper-desktop-max;
   }
@@ -110,7 +107,7 @@
     padding: 20px 110px 18px 55px;
   }
 
-  .main-nav__list-hidden{
+  .main-nav__list-hidden {
     order: 4;
   }
 

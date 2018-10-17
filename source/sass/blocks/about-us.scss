@@ -43,9 +43,11 @@
   &--clear {
     width: 190px;
   }
+
   &--clew {
     width: 215px;
   }
+
   &--rocket {
     width: 255px;
   }
@@ -60,6 +62,8 @@
   .about-us__wrapper {
     @include wrapper-tablet;
 
+    flex-direction: row;
+    justify-content: space-between;
     padding-top: 55px;
   }
 
@@ -77,25 +81,25 @@
   .about-us__list-item {
     margin-bottom: 85px;
     width: 215px;
+
     &--price {
       width: 240px;
     }
+
     &--clew {
       width: 255px;
     }
+
     &--rocket {
       width: 300px;
     }
-    &--gift{
+
+    &--gift {
       width: 240px;
     }
   }
-
-  .about-us__wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
+
 @media (min-width: $desktop-width) {
   .about-us__wrapper {
     width: 700px;

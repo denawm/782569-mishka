@@ -46,10 +46,12 @@
     margin-right: 65px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     @include wrapper-desktop;
   }
+
   .page-footer__logo {
     margin-right: 245px;
   }
