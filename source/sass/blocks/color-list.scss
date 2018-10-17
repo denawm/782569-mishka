@@ -1,21 +1,35 @@
 .color-list {
   padding: 30px 0;
   padding-left: 60px;
-  margin: 0;
-
-  font-family: $font-base;
-  color: $font-color;
-  font-size: $font-size;
-
-  list-style: none;
-}
-
-.color-list__label {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
 }
 
 .color-list__item {
   margin-bottom: 35px;
 }
+
+@media (min-width: $tablet-width) {
+  .color-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    padding: 0;
+    padding-left: 80px;
+  }
+
+  .color-list__item {
+    width: 250px;
+  }
+
+  .contacts-list__label--color {
+    margin-right: 70px;
+    display: inline-block;
+    min-width: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .color-list {
+    width: 800px;
+  }
+}
+

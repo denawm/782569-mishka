@@ -1,21 +1,3 @@
-.contacts-list {
-  @include reset;
-
-  padding: 25px 0;
-  padding-bottom: 0;
-
-  font-family: $font-base;
-  color: $font-color;
-  font-size: $font-size;
-
-  list-style: none;
-}
-
-.contacts-list__label {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
-}
 
 .contacts-list__label--color {
   line-height: 16px;
@@ -41,3 +23,38 @@
   border: 2px solid black;
   resize: none;
 }
+
+
+@media (min-width: $tablet-width) {
+  .contacts-list--color .contacts-list__item {
+    margin-bottom: 50px;
+  }
+
+  .contacts-list--color {
+    padding-top: 60px;
+  }
+
+  .contacts-list__label {
+    vertical-align: top;
+
+  }
+  .contacts-list__item {
+    margin-bottom: 60px;
+  }
+
+  .contacts-list__textarea {
+    width: 500px;
+  }
+
+  .contacts-list__label--color {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-list__textarea {
+    width: 700px;
+  }
+}
+
+

@@ -2,8 +2,19 @@
   font-family: $font-base;
   color: $font-color;
   font-size: $font-size;
+}
 
-  @include wrapper-max;
+.form-list__list {
+  padding: 0;
+  margin: 0;
+
+  font-family: $font-base;
+  color: $font-color;
+  font-size: $font-size;
+  line-height: 18px;
+  font-weight: bold;
+
+  list-style: none;
 }
 
 .form-list__title {
@@ -27,10 +38,13 @@
 }
 
 .form-list__wrapper {
+  @include wrapper;
   padding: 25px 30px;
 }
 
 .form-list__legend {
+  margin: 0;
+
   line-height: 16px;
   font-weight: bold;
   text-transform: uppercase;
@@ -61,4 +75,85 @@
   font-size: $font-size;
 
   background: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-list__list {
+    font-size: 19px;
+    display: inline-block;
+    padding: 0;
+  }
+
+  .form-list__legend {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 115px;
+    width: 50px;
+  }
+
+  .form-list__list {
+    font-size: 19px;
+  }
+
+  .form-list__wrapper {
+    @include wrapper-tablet-max;
+
+    padding-top: 80px;
+  }
+
+  .form-list__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .form-list_text {
+    margin: 0;
+    padding: 0 50px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form-list__block {
+    padding: 65px 50px;
+  }
+
+  .form-list__block--color {
+    background: #f1f1f1;
+    padding-bottom: 0;
+  }
+
+  .form-list__btn-wrapper {
+    display: flex;
+    padding: 0 50px;
+  }
+
+  .form-list__btn {
+    order: 1;
+  }
+
+  .form-list__required-text {
+    order: 2;
+    font-size: 17px;
+    line-height: 30px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-list__wrapper {
+    @include wrapper-desktop-max;
+  }
+
+  .form-list_text {
+    padding: 0 225px;
+  }
+
+  .form-list__block {
+    padding: 65px 115px;
+  }
+
+  .form-list__btn-wrapper {
+    padding: 0 225px;
+  }
 }
