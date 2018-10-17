@@ -25,11 +25,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
-  .offers {
-
-  }
-
   .offers_wrapper {
     @include wrapper-tablet;
     padding-top: 90px;
@@ -44,9 +39,10 @@
     line-height: 50px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .offers_wrapper {
-     @include wrapper-desktop;
+    @include wrapper-desktop;
     padding-top: 95px;
     background: url("../img/hero-desktop@1x.jpg") no-repeat 50% 0;
   }

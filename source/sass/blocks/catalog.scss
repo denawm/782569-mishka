@@ -2,12 +2,10 @@
   font-family: $font-base;
   color: $font-color;
   font-size: $font-size;
-
-
 }
 
 .catalog__wrapper {
- @include wrapper-max;
+  @include wrapper-max;
 
   padding: 30px;
   display: flex;
