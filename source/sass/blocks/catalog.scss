@@ -2,12 +2,15 @@
   font-family: $font-base;
   color: $font-color;
   font-size: $font-size;
-
-  @include wrapper;
 }
 
 .catalog__wrapper {
+  @include wrapper-max;
+
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .catalog__title {
@@ -22,4 +25,35 @@
 
 .catalog__cart {
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    padding: 55px 40px;
+    text-align: center;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .catalog__wrapper {
+    @include wrapper-tablet;
+
+    padding-top: 85px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__title {
+    padding: 55px 40px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .catalog__wrapper {
+    @include wrapper-desktop;
+
+    padding-top: 95px;
+    flex-direction: row;
+  }
 }

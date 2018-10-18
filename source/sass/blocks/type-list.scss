@@ -1,20 +1,18 @@
 .type-list {
+  @include reset-list;
+
   padding: 30px 0;
   padding-left: 60px;
-  margin: 0;
-
-  font-family: $font-base;
-  color: $font-color;
-  font-size: $font-size;
-  list-style: none;
-}
-
-.type-list__label {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
 }
 
 .type-list__item {
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .type-list {
+    @include reset;
+
+    padding-left: 80px;
+  }
 }

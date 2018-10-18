@@ -4,20 +4,59 @@
   font-size: $font-size;
 
   background: $footer-color;
-
-  @include wrapper;
 }
 
 .page-footer__wrapper {
-  padding: 0 30px;
-  padding-bottom: 0;
+  @include wrapper-max;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  background: $footer-color;
 }
 
 .page-footer__devoloper {
+  display: inline-block;
+  margin: 25px 0;
   margin-left: 40px;
 
   font-size: 19px;
   font-weight: bold;
   color: $font-color;
   text-decoration: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    @include wrapper-tablet;
+    flex-direction: row;
+  }
+
+  .page-footer__devoloper {
+    margin: 55px 0;
+    margin-right: 55px;
+  }
+
+  .page-footer__logo {
+    width: 110px;
+    height: 45px;
+    margin-top: 50px;
+    margin-right: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    @include wrapper-desktop;
+  }
+
+  .page-footer__logo {
+    margin-right: 245px;
+  }
+
+  .page-footer__devoloper {
+    margin-left: auto;
+  }
 }

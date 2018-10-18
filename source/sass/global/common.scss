@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 330px;
+  min-width: 320px;
 
   font-family: $font-base;
   font-size: $font-size;
@@ -16,7 +16,11 @@ img {
 }
 
 .page-header {
-  @include wrapper;
+  background: #ffffff;
+}
+
+.page-main {
+  background: #ffffff;
 }
 
 .visually-hidden:not(:focus):not(:active),

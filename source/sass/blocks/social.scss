@@ -1,3 +1,28 @@
 .social {
+  padding: 30px 0 30px 60px;
+  display: flex;
+
   background: $footer-color;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__btn {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 30px;
+
+  background: blue;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 60px 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding: 60px 100px;
+  }
 }
