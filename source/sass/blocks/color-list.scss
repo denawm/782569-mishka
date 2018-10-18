@@ -9,21 +9,14 @@
 
 @media (min-width: $tablet-width) {
   .color-list {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     width: 500px;
     padding: 0;
-    padding-left: 80px;
   }
 
   .color-list__item {
     width: 250px;
-  }
-
-  .contacts-list__label--color {
-    margin-right: 70px;
-    display: inline-block;
-    min-width: 65px;
   }
 }
 

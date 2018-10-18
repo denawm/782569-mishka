@@ -47,6 +47,10 @@
   }
 
   .contacts-list__label--color {
+    margin-right: 95px;
+    display: inline-block;
+    min-width: 65px;
+
     font-size: 17px;
   }
 }
@@ -54,5 +58,9 @@
 @media (min-width: $desktop-width) {
   .contacts-list__textarea {
     width: 700px;
+  }
+
+  .contacts-list__label--color {
+    margin-right: 50px;
   }
 }

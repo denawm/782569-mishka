@@ -87,8 +87,8 @@
   .form-list__legend {
     display: inline-block;
     vertical-align: top;
-    margin-right: 115px;
-    width: 50px;
+    margin-right: 95px;
+    min-width: 65px;
   }
 
   .form-list__wrapper {
@@ -98,6 +98,7 @@
   }
 
   .form-list__title {
+    padding: 90px 40px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -116,7 +117,7 @@
 
   .form-list__block--color {
     background: #f1f1f1;
-    padding-bottom: 0;
+    padding-bottom: 40px;
   }
 
   .form-list__btn-wrapper {
@@ -141,12 +142,23 @@
     @include wrapper-desktop-max;
   }
 
+  .form-list__title {
+    padding: 100px 40px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .form-list__legend {
+    margin-right: 50px;
+  }
+
   .form-list_text {
     padding: 0 225px;
+    margin-top: 110px;
   }
 
   .form-list__block {
-    padding: 65px 115px;
+    padding: 65px 110px;
   }
 
   .form-list__btn-wrapper {
