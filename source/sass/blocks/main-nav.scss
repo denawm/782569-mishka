@@ -28,6 +28,7 @@
   position: relative;
 
   padding: 20px 115px;
+  padding-bottom: 13px;
 
   background: $offer-color;
   border-bottom: 1px solid #ececec;
@@ -40,8 +41,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 15px;
+  right: 21px;
   background: transparent;
 
   width: 40px;
@@ -71,8 +72,8 @@
     content: "";
 
     position: absolute;
-    top: 17px;
-    left: 10px;
+    top: 23px;
+    left: 9px;
 
     width: 22px;
     height: 2px;
