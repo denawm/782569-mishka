@@ -15,6 +15,7 @@
 .main-nav__text {
   @include reset;
 
+  display: none;
   margin-top: 20px;
   margin-left: auto;
 
@@ -26,9 +27,10 @@
 .main-nav__logo-wrapper {
   position: relative;
 
-  padding: 35px 115px;
+  padding: 20px 115px;
 
   background: $offer-color;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav__wrapper {
@@ -38,6 +40,67 @@
 
 .main-nav__toggle {
   position: absolute;
+  top: 20px;
+  right: 10px;
+  background: transparent;
+
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  width: 20px;
+  height: 2px;
+
+  background-color: #000000;
+  box-shadow: 0 6px 0 0 #000000,
+    0 12px 0 0 #000000;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 17px;
+    left: 10px;
+
+    width: 22px;
+    height: 2px;
+
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -58,7 +121,7 @@
     order: 1;
     padding: 26px 210px 18px 50px;
 
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
   }
 
   .main-nav__toggle {

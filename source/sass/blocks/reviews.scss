@@ -21,15 +21,16 @@
 .reviews__btn-wrapper {
   display: flex;
   order: 3;
-
+  padding: 29px 0;
   align-items: flex-start;
+  margin-bottom: 9px;
 }
 
 .reviews__title {
   @include reset;
 
   order: 1;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
 
   font-size: 25px;
   line-height: 30px;
@@ -45,7 +46,7 @@
 .reviews__text {
   @include reset;
 
-  margin-bottom: 35px;
+  margin-bottom: 27px;
   width: 100%;
 
   font-size: 15px;
@@ -60,6 +61,8 @@
 .reviews__inst {
   @include reset;
 
+  margin-top: 3px;
+
   line-height: 30px;
   color: #444444;
 }
@@ -67,11 +70,28 @@
 .reviews__btn {
   @include reset-list;
 
-  margin: 30px 0;
+  width: 130px;
+  height: 52px;
+  margin: 0;
+
+  border: 1px solid #ececec;
+  background: #ffffff;
+
+  &:hover svg,
+  &:focus svg{
+    opacity: 0.6;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .reviews__button {
   order: 4;
+  padding: 14px 78px;
+
+  font-size: 18px;
 }
 
 @media (min-width: $tablet-width) {

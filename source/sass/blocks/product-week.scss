@@ -12,7 +12,7 @@
 
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 27px;
 }
 
 .product-week__image {
@@ -29,6 +29,8 @@
 
 .product-week__title {
   @include reset;
+
+  margin-bottom: 5px;
 
   font-size: 25px;
   line-height: 30px;
@@ -48,7 +50,8 @@
 .product-week__text {
   @include reset;
 
-  margin: 20px 0;
+  margin: 16px 0;
+  margin-top: 23px;
   width: 260px;
 
   font-size: 15px;
@@ -78,7 +81,8 @@
 }
 
 .product-week__price {
-  margin: 25px 65px;
+  margin: 23px 67px;
+  margin-bottom: 29px;
   padding: 0;
 
   color: #444444;
@@ -86,11 +90,20 @@
 }
 
 .product-week__info {
+  margin-bottom: 7px;
   order: 2;
 }
 
 .product-week__price-wrapper {
   order: 4;
+}
+
+.product-week__field{
+  width: auto;
+}
+
+.product-week__item {
+  width: 37%;
 }
 
 @media (min-width: $tablet-width) {
@@ -138,7 +151,7 @@
     line-height: 30px;
   }
 
-  .product-week__image {
+  .product-week__image-week {
     height: 404px;
     width: 333px;
 
@@ -184,7 +197,7 @@
     margin-top: 135px;
   }
 
-  .product-week__image {
+  .product-week__image-week {
     height: 636px;
     width: 525px;
     margin-top: -100px;

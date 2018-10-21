@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   flex-direction: column;
 
-  padding-top: 30px;
+  padding-top: 23px;
   padding-bottom: 0;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .about-us__list-item {
-  margin-bottom: 85px;
+  margin-bottom: 83px;
   width: 200px;
 
   &--clear {
@@ -55,7 +55,7 @@
 
 .about-us__list-item--gift {
   width: 210px;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 }
 
 @media (min-width: $tablet-width) {

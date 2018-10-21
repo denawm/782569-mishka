@@ -11,10 +11,10 @@
 }
 
 .contacts__wrapper {
-  @include wrapper;
-
-  padding-top: 40px;
-  padding-bottom: 50px;
+  margin: 0;
+  padding: 0 25px;
+  padding-top: 41px;
+  padding-bottom: 9px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -28,7 +28,7 @@
 .contacts__table {
   @include reset;
 
-  margin-top: 35px;
+  margin-top: 21px;
 
   font-size: 15px;
   line-height: 30px;
@@ -36,7 +36,9 @@
 }
 
 .contacts__item {
-  width: 75px;
+  padding: 0;
+  margin: 0;
+  min-width: 74px;
 
   vertical-align: top;
 }
@@ -46,14 +48,20 @@
 }
 
 .contacts__button {
-  padding: 15px 53px;
+  padding: 14px 49px;
+  margin: 39px 30px;
 
-  margin: 40px auto;
+  font-size: 18px;
 }
 
 .contacts__row {
+  margin-bottom: 23px;
   display: inline-table;
   vertical-align: top;
+}
+
+.contacts__adress {
+  width: 160px;
 }
 
 @media (min-width: $tablet-width) {
@@ -78,7 +86,7 @@
     font-size: 17px;
   }
 
-  .contacts__map {
+  .contacts__map-image {
     width: 768px;
     height: 457px;
   }
@@ -114,7 +122,7 @@
     line-height: 57px;
   }
 
-  .contacts__map {
+  .contacts__map-image {
     width: 525px;
     height: 457px;
   }

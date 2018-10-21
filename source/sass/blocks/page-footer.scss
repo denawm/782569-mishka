@@ -7,26 +7,41 @@
 }
 
 .page-footer__wrapper {
-  @include wrapper-max;
+  @include wrapper;
 
   display: flex;
   flex-direction: column;
-  padding: 0;
 
   background: $footer-color;
 }
 
 .page-footer__devoloper {
+  position: relative;
+
   display: inline-block;
-  margin: 25px 0;
-  margin-left: 40px;
+  margin: 27px 0;
+  margin-left: 38px;
 
   font-size: 19px;
   font-weight: bold;
   color: $font-color;
   text-decoration: none;
+
+  &:hover path,
+  &:focus path{
+    fill : #51c4b2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
+.page-footer__svg {
+  position: absolute;
+  right: 28px;
+  top: -8px;
+}
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {

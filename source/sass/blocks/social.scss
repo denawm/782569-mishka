@@ -1,5 +1,6 @@
 .social {
-  padding: 30px 0 30px 60px;
+  padding: 24px 57px;
+  padding-bottom: 20px;
   display: flex;
 
   background: $footer-color;
@@ -8,11 +9,26 @@
 
 .social__btn {
   display: inline-block;
-  width: 22px;
-  height: 22px;
-  margin-right: 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 41px;
 
-  background: blue;
+  &:hover path,
+  &:focus path{
+    fill : #51c4b2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__btn--in {
+  margin-top: 6px;
+}
+
+.social__btn--tw {
+  margin-top: 5px;
 }
 
 @media (min-width: $tablet-width) {
