@@ -16,8 +16,6 @@
   @include reset;
 
   display: none;
-  margin-top: 20px;
-  margin-left: auto;
 
   font-size: 0;
   line-height: 24px;
@@ -120,9 +118,9 @@
 
   .main-nav__logo-wrapper {
     order: 1;
-    padding: 26px 210px 18px 50px;
+    padding: 26px 207px 16px 50px;
 
-    border-bottom: 1px solid rgba(0,0,0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .main-nav__toggle {
@@ -130,6 +128,11 @@
   }
 
   .main-nav__text {
+    display: block;
+    margin-top: 17px;
+    margin-left: auto;
+    margin-right: 50px;
+
     font-size: 15px;
     order: 5;
   }

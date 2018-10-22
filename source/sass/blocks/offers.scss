@@ -7,9 +7,9 @@
 .offers_wrapper {
   @include wrapper-max;
 
-  padding-top: 63px;
+  padding-top: 70px;
 
-  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% -16%;
 }
 
 .offers__title {
@@ -26,14 +26,14 @@
 @media (min-width: $tablet-width) {
   .offers_wrapper {
     @include wrapper-tablet;
-    padding-top: 70px;
+    padding-top: 152px;
     background: url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
   }
 
   .offers__title {
     @include reset;
 
-    margin-bottom: 365px;
+    margin-bottom: 373px;
     font-size: 43px;
     line-height: 50px;
   }

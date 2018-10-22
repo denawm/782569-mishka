@@ -21,9 +21,9 @@
 .reviews__btn-wrapper {
   display: flex;
   order: 3;
-  padding: 29px 0;
+  margin: 29px 0;
   align-items: flex-start;
-  margin-bottom: 9px;
+  margin-bottom: 38px;
 }
 
 .reviews__title {
@@ -78,7 +78,7 @@
   background: #ffffff;
 
   &:hover svg,
-  &:focus svg{
+  &:focus svg {
     opacity: 0.6;
   }
 
@@ -110,8 +110,8 @@
   }
 
   .reviews__title {
-    width: 485px;
-    margin-bottom: 55px;
+    width: 475px;
+    margin-bottom: 46px;
 
     font-size: 43px;
     line-height: 50px;
@@ -119,7 +119,7 @@
 
   .reviews__button {
     order: 2;
-    padding: 15px 40px;
+    padding: 14px 36px;
     margin-left: auto;
   }
 
@@ -128,14 +128,27 @@
   }
 
   .reviews__text {
+    margin-bottom: 58px;
+
     font-size: 17px;
     line-height: 30px;
   }
 
+  .reviews__name {
+    font-size: 18px;
+  }
+
   .reviews__btn-wrapper {
+    @include reset;
+
     position: absolute;
-    bottom: 50px;
-    right: 20px;
+    bottom: 47px;
+    right: 49px;
+  }
+
+  .reviews__btn {
+    width: 89px;
+    border: none;
   }
 }
 

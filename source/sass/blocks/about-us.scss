@@ -37,6 +37,8 @@
 }
 
 .about-us__list-item {
+  position: relative;
+
   margin-bottom: 83px;
   width: 200px;
 
@@ -53,9 +55,40 @@
   }
 }
 
+.about-us__icon {
+  position: absolute;
+  left: 8px;
+  top: -53px;
+}
+
 .about-us__list-item--gift {
   width: 210px;
   margin-bottom: 56px;
+}
+
+.about-us__list-item--price .about-us__icon{
+  left: 0px;
+  top: -52px;
+}
+
+.about-us__list-item--like .about-us__icon{
+  left: 8px;
+  top: -48px;
+}
+
+.about-us__list-item--clew .about-us__icon{
+  left: 4px;
+  top: -50px;
+}
+
+.about-us__list-item--rocket .about-us__icon{
+  left: -5px;
+  top: -49px;
+}
+
+.about-us__list-item--gift .about-us__icon{
+  left: 4px;
+  top: -51px;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,12 +96,14 @@
     @include wrapper-tablet;
 
     flex-direction: row;
-    justify-content: space-between;
-    padding-top: 55px;
+    padding-top: 50px;
+    margin-bottom: 83px;
   }
 
   .about-us__title {
     width: 100%;
+    margin-bottom: 103px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -76,10 +111,17 @@
   .about-us__list {
     font-size: 20px;
     line-height: 22px;
+    margin-right: 95px;
   }
 
+  .about-us__list:last-child {
+    margin-right: 0;
+  }
+
+
+
   .about-us__list-item {
-    margin-bottom: 85px;
+    margin-bottom: 111px;
     width: 215px;
 
     &--price {
@@ -98,6 +140,11 @@
       width: 240px;
     }
   }
+
+   .about-us__list-item:last-child {
+    margin-bottom: 0;
+  }
+
 }
 
 @media (min-width: $desktop-width) {

@@ -9,20 +9,38 @@
   color: $offer-color;
 }
 
-.offer-list__item {
+.offer-list__btn {
+  position: relative;
+
   padding: 27px;
   padding-bottom: 28px;
   padding-right: 163px;
-}
 
-.offer-list__text {
-  @include reset;
-
-  width: 135px;
 
   font-size: 19px;
   line-height: 24px;
+  font-family: $font-base;
+  color: $offer-color;
   font-weight: bold;
+  text-align: left;
+
+  border: none;
+  cursor: pointer;
+  background: transparent;
+
+  &:hover svg,
+  &:focus svg{
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.offer-list__icon {
+  position: absolute;
+  opacity: 0.5;
 }
 
 .offer-list__item--interior {
@@ -33,23 +51,43 @@
   background: #56c3b2;
 }
 
+.offer-list__btn--interior .offer-list__icon {
+  right: 35px;
+  top: 22px;
+}
+
+.offer-list__btn--toys .offer-list__icon {
+  right: 26px;
+  top: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .offer-list {
     flex-direction: row;
   }
 
-  .offer-list__item {
-    padding-left: 36px;
-  }
+  .offer-list__btn {
+    padding-left: 35px;
 
-  .offer-list__text {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .offer-list__item {
+    width: 50%;
+  }
+
+  .offer-list__btn--interior .offer-list__icon {
+    right: 37px;
+    top: 30px;
+  }
+
+  .offer-list__btn--toys .offer-list__icon {
+    right: 34px;
+    top: 32px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .offer-list__item {
-    padding-right: 353px;
-  }
+
 }
