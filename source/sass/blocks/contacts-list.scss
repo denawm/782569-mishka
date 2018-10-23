@@ -1,3 +1,10 @@
+.contacts-list {
+  padding-top: 28px;
+}
+
+.contacts-list--color {
+  padding-top: 0;
+}
 
 .contacts-list__label--color {
   line-height: 16px;
@@ -6,19 +13,41 @@
   text-transform: uppercase;
 }
 
+.contacts-list__item {
+  margin-bottom: 22px;
+}
+
+.contacts-list--color .contacts-list__item {
+  margin-bottom: 30px;
+}
+
 .contacts-list__text {
   width: 260px;
+  padding: 16px 0;
 
   font-size: 17px;
   line-height: 18px;
 
   border: none;
   border-bottom: 2px solid black;
+
+  &--phone {
+    padding-top: 18px;
+    padding-bottom: 13px;
+    font-size: 19px;
+  }
+
+  &--email {
+    padding-top: 22px;
+    padding-bottom: 17px;
+  }
 }
 
 .contacts-list__textarea {
+  margin-top: 24px;
   padding: 15px 10px;
   width: 236px;
+  min-height: 108px;
 
   border: 2px solid black;
   resize: none;

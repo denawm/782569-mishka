@@ -19,18 +19,20 @@
 
 .form-list__title {
   margin: 0;
-  padding: 75px 35px;
-  background: #f1f1f1;
+  padding: 70px 35px;
+  padding-bottom: 76px;
 
   text-align: center;
   font-size: 27px;
   line-height: 30px;
+
+  background: #f1f1f1;
 }
 
 .form-list_text {
   @include reset;
 
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   font-size: 13px;
   line-height: 24px;
@@ -39,7 +41,9 @@
 
 .form-list__wrapper {
   @include wrapper;
-  padding: 25px 30px;
+  padding: 22px 30px;
+  padding-bottom: 0;
+  margin-bottom: 29px;
 }
 
 .form-list__legend {
@@ -54,8 +58,21 @@
 .form-list__block {
   padding: 0;
   margin: 0;
+  margin-bottom: 20px;
 
   border: none;
+
+  &--color {
+    margin-bottom: 0;
+  }
+
+  &--contacts {
+    margin-bottom: 7px;
+  }
+
+  &--textarea {
+    margin-bottom: 14px;
+  }
 }
 
 .form-list__required-text {
