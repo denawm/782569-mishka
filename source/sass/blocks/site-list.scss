@@ -166,6 +166,7 @@
     @include reset;
 
     padding: 33px 35px;
+    padding-top: 31px;
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -176,24 +177,21 @@
   }
 
   .site-list__item--basket {
-    padding: 33px 50px 30px 75px;
+    padding: 31px 50px 30px 82px;
   }
 
   .site-list__item--search {
-    padding: 33px 30px;
+    padding: 0;
   }
 
   .site-list--hidden {
-    @include reset;
-
     display: flex;
-    padding: 20px 50px;
 
     border: none;
   }
 
   .site-list--hidden .site-list__item {
-    margin-right: 65px;
+    margin-right: 61px;
     padding: 0;
 
     border: none;

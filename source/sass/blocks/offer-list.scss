@@ -12,6 +12,7 @@
 .offer-list__btn {
   position: relative;
 
+  width: 100%;
   padding: 27px;
   padding-bottom: 28px;
   padding-right: 163px;
@@ -89,5 +90,7 @@
 }
 
 @media (min-width: $desktop-width) {
-
+  .offer-list__btn {
+    padding-right: 310px;
+  }
 }

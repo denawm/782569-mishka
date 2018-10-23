@@ -155,21 +155,21 @@
 @media (min-width: $desktop-width) {
   .reviews {
     @include wrapper-desktop;
-    background-position: 50px 0;
+    background-position: 50px 7px;
     margin-bottom: 85px;
   }
 
   .reviews__wrapper {
     width: 875px;
     padding: 0;
-    padding-top: 75px;
+    padding-top: 77px;
     padding-bottom: 100px;
     margin-left: 175px;
   }
 
   .reviews__title {
     width: 485px;
-    margin-bottom: 55px;
+    margin-bottom: 49px;
 
     font-size: 53px;
     line-height: 57px;
@@ -177,5 +177,19 @@
 
   .reviews__text {
     width: 780px;
+    margin-bottom: 39px;
+  }
+
+  .reviews__button {
+    margin-top: 9px;
+  }
+
+  .reviews__name {
+    font-size: 17px;
+  }
+
+  .reviews__btn-wrapper {
+    bottom: 102px;
+    right: -1px;
   }
 }
