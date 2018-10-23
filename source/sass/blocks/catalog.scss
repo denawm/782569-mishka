@@ -5,7 +5,7 @@
 }
 
 .catalog__wrapper {
-  @include wrapper-max;
+  @include wrapper;
 
   padding: 30px;
   display: flex;
@@ -15,7 +15,8 @@
 
 .catalog__title {
   margin: 0;
-  padding: 75px 40px;
+  padding: 70px 40px;
+  padding-bottom: 76px;
   background: #f1f1f1;
 
   text-align: center;

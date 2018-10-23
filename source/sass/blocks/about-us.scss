@@ -66,27 +66,27 @@
   margin-bottom: 56px;
 }
 
-.about-us__list-item--price .about-us__icon{
-  left: 0px;
+.about-us__list-item--price .about-us__icon {
+  left: 0;
   top: -52px;
 }
 
-.about-us__list-item--like .about-us__icon{
+.about-us__list-item--like .about-us__icon {
   left: 8px;
   top: -48px;
 }
 
-.about-us__list-item--clew .about-us__icon{
+.about-us__list-item--clew .about-us__icon {
   left: 4px;
   top: -50px;
 }
 
-.about-us__list-item--rocket .about-us__icon{
+.about-us__list-item--rocket .about-us__icon {
   left: -5px;
   top: -49px;
 }
 
-.about-us__list-item--gift .about-us__icon{
+.about-us__list-item--gift .about-us__icon {
   left: 4px;
   top: -51px;
 }
@@ -118,8 +118,6 @@
     margin-right: 0;
   }
 
-
-
   .about-us__list-item {
     margin-bottom: 111px;
     width: 215px;
@@ -141,10 +139,9 @@
     }
   }
 
-   .about-us__list-item:last-child {
+  .about-us__list-item:last-child {
     margin-bottom: 0;
   }
-
 }
 
 @media (min-width: $desktop-width) {
