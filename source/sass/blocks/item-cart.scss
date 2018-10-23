@@ -80,8 +80,30 @@
 
 .item-cart__basket-btn {
   position: absolute;
-  right: 30px;
-  bottom: 30px;
+  right: 23px;
+  bottom: 24px;
+
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  opacity: 0.3;
+
+  &:hover path,
+  &:focus path {
+    fill: #63d1bb;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {
