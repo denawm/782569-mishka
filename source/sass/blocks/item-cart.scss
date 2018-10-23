@@ -1,5 +1,5 @@
 .item-cart {
-  width: 260px;
+  max-width: 260px;
   min-height: 372px;
   display: flex;
   flex-direction: column;
@@ -30,6 +30,7 @@
 
 .item-cart--video {
   background: url("../img/svg/icon-video.svg") no-repeat 33px 30px;
+  border: 1px solid #ededed;
 }
 
 .item-cart__price {
@@ -117,13 +118,13 @@
 @media (min-width: $tablet-width) {
   .item-cart__wrapper {
     padding: 25px 26px;
-    min-width: 278px;
+    width: 278px;
 
     border: 1px solid #ededed;
   }
 
   .item-cart {
-    width: 666px;
+    max-width: 666px;
     min-height: 333px;
     flex-direction: row;
   }
@@ -137,12 +138,18 @@
 
   .item-cart__text {
     font-size: 15px;
+    width: 250px;
   }
 
   .item-cart__price {
     margin-left: 4px;
+    width: 250px;
 
     font-size: 17px;
+  }
+
+  .item-cart__image {
+    min-height: 333px;
   }
 
   .item-cart__basket-btn {
@@ -197,15 +204,21 @@
   .item-cart__wrapper {
     margin: 0;
     padding: 25px;
-    margin-top: auto;
+    width: auto;
+    max-width: 315px;
+    min-height: 145px;
+  }
+
+  .item-cart__image {
+    min-height: 462px;
   }
 
   .item-cart {
-    width: 313px;
+    max-width: 316px;
     margin: 0;
     flex-direction: column;
     margin-right: 50px;
-    min-height: 657px;
+    min-height: 660px;
     margin-bottom: 55px;
   }
 
@@ -214,7 +227,11 @@
   }
 
   .item-cart__text {
-    margin-bottom: 55px;
+    margin-bottom: 0;
+  }
+
+  .item-cart__price {
+    margin-left: 2px;
   }
 
   .item-cart--video {
@@ -222,7 +239,10 @@
     flex-direction: row;
     width: 1050px;
     min-height: 453px;
+    max-width: 1050px;
     margin-bottom: 105px;
+
+    background-position: 761px 42px;
   }
 
   .item-cart__video-video {
@@ -236,27 +256,28 @@
     width: 160px;
     margin: 0;
     margin-left: auto;
-    margin-top: 100px;
-    margin-right: 130px;
+    margin-top: 96px;
+    margin-right: 129px;
   }
 
   .item-cart__video-wrapper {
     order: 3;
     padding: 0;
     margin-left: auto;
-    margin-right: 55px;
-    margin-top: -250px;
+    margin-right: 49px;
+    margin-top: -278px;
   }
 
   .item-cart__video-text {
     width: 240px;
+    margin-bottom: 46px;
 
     font-size: 15px;
     line-height: 30px;
   }
 
   .item-cart__video-btn {
-    padding: 12px 45px;
+    padding: 14px 44px;
   }
 
   .item-cart__image img {
