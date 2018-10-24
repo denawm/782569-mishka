@@ -5,14 +5,17 @@
   color: $font-color;
   font-size: $font-size;
 
-  border: 1px solid #ededed;
+  border: 1px solid #c6c6c6;
 
   @include wrapper;
 }
 
 .modal-basket__title {
   padding: 0;
-  margin: 30px 80px 20px 80px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 155px;
 
   font-size: 25px;
   line-height: 30px;
@@ -22,7 +25,8 @@
 
 .modal-basket__text {
   padding: 0;
-  margin: 0 50px 25px 95px;
+  margin: 0 auto;
+  width: 135px;
 
   font-size: 15px;
   line-height: 30px;
@@ -30,10 +34,8 @@
 }
 
 .modal-basket__btn {
-  padding: 15px 95px;
+  padding: 15px 82px;
   margin-bottom: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
 
   font-family: $font-base;
   font-size: $font-size;

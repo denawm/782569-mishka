@@ -1,7 +1,8 @@
 .size-list {
   @include reset-list;
-
-  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
   margin-bottom: 30px;
 
   font-family: $font-base;
@@ -9,4 +10,9 @@
   font-size: $font-size;
   line-height: 16px;
   font-weight: bold;
+}
+
+.size-list__item {
+  padding: 30px;
+  margin-right: 5px;
 }

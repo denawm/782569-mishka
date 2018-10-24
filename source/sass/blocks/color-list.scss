@@ -10,6 +10,7 @@
 @media (min-width: $tablet-width) {
   .color-list {
     display: inline-flex;
+    margin-bottom: 12px;
     flex-wrap: wrap;
     width: 550px;
     padding: 0;
@@ -20,12 +21,16 @@
     margin: 0;
     padding-left: 82px;
     margin-right: 60px;
-    padding-bottom: 57px;
+    margin-bottom: 57px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .color-list {
     width: 800px;
+  }
+
+  .color-list__item {
+    padding-left: 84px;
   }
 }

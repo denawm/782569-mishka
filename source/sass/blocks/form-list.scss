@@ -29,7 +29,7 @@
   background: #f1f1f1;
 }
 
-.form-list_text {
+.form-list__text {
   @include reset;
 
   margin-bottom: 24px;
@@ -139,7 +139,7 @@
     &--color {
       margin: 0;
       padding: 67px 51px;
-      padding-bottom: 12px;
+      padding-bottom: 0;
       padding-right: 0;
 
       background: #f1f1f1;
@@ -192,25 +192,56 @@
 @media (min-width: $desktop-width) {
   .form-list__wrapper {
     @include wrapper-desktop-max;
+
+    padding-top: 125px;
   }
 
   .form-list__title {
-    padding: 100px 40px;
-    font-size: 43px;
-    line-height: 50px;
+    padding: 92px 40px;
+    padding-left: 57px;
+    padding-bottom: 100px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .form-list__legend {
-    margin-right: 50px;
+    margin-right: 41px;
   }
 
   .form-list_text {
     padding: 0 225px;
-    margin-top: 110px;
   }
 
   .form-list__block {
-    padding: 65px 110px;
+    padding: 73px 113px;
+    padding-bottom: 0;
+    padding-right: 20px;
+    margin-bottom: 11px;
+
+    &--color {
+      padding: 66px 110px;
+      padding-bottom: 0;
+      padding-right: 20px;
+      margin-bottom: 11px;
+    }
+
+    &--contacts {
+      padding: 55px 110px;
+      padding-bottom: 0;
+      padding-right: 20px;
+      margin-bottom: 11px;
+    }
+
+    &--textarea {
+      padding: 39px 110px;
+      padding-bottom: 0;
+      padding-right: 20px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .form-list__block--contacts .form-list__legend {
+    margin-right: 48px;
   }
 
   .form-list__btn-wrapper {

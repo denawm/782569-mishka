@@ -65,6 +65,7 @@
 
     &--color {
       width: 667px;
+      margin-bottom: 12px;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -131,6 +132,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts-list {
+    width: 698px;
+
+    &--color {
+      width: 815px;
+    }
+
+    &--textarea {
+      width: 900px;
+    }
+  }
+
   .contacts-list__textarea {
     width: 700px;
   }
