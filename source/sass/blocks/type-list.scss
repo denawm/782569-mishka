@@ -13,6 +13,10 @@
   .type-list {
     @include reset;
 
-    padding-left: 80px;
+    padding-left: 82px;
+  }
+
+  .type-list__item {
+    margin-bottom: 57px;
   }
 }
