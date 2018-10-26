@@ -1,4 +1,6 @@
 .offers {
+  position: relative;
+
   color: $font-color;
   font-family: $font-base;
   background: #f9f9f9;
@@ -24,6 +26,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .offers::after {
+    content: "";
+
+    position: absolute;
+    bottom: -13px;
+
+    width: 100%;
+    height: 50px;
+
+    background: url("../img/svg/bg-zigzag-fill.svg") no-repeat -8px 100%;
+    background-size: 104%;
+    z-index: 1;
+  }
+
   .offers_wrapper {
     @include wrapper-tablet;
     padding-top: 152px;
@@ -40,6 +56,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .offers::after {
+    bottom: -21px;
+    background-position: 14px 100%;
+    background-size: 110%;
+  }
+
   .offers_wrapper {
     @include wrapper-desktop;
 

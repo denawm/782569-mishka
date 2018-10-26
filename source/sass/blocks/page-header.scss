@@ -4,6 +4,8 @@
   background: $main-color;
 
   @include wrapper-max;
+
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
