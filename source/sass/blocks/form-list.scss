@@ -47,12 +47,27 @@
 }
 
 .form-list__legend {
+  position: relative;
+
   margin: 0;
 
   line-height: 16px;
   font-weight: bold;
   text-transform: uppercase;
   color: #63d1bb;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 62px;
+
+    width: 198px;
+    height: 1px;
+
+    background: #62d1ba;
+  }
 }
 
 .form-list__block {
@@ -106,6 +121,10 @@
     vertical-align: top;
     margin-right: 95px;
     min-width: 65px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .form-list__wrapper {
@@ -221,6 +240,7 @@
     line-height: 57px;
 
     &::after {
+      height: 70px;
       bottom: -22px;
       background-position: -2px 100%;
       background-size: 102%;
