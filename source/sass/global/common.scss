@@ -8,6 +8,10 @@ body {
   color: $font-color;
 
   background: $main-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 90px;
+  }
 }
 
 img {
@@ -15,12 +19,8 @@ img {
   height: auto;
 }
 
-.page-header {
-  background: #ffffff;
-}
-
 .page-main {
-  background: #ffffff;
+  background: $main-color;
 }
 
 .visually-hidden:not(:focus):not(:active),

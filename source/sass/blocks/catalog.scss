@@ -5,7 +5,7 @@
 }
 
 .catalog__wrapper {
-  @include wrapper-max;
+  @include wrapper;
 
   padding: 30px;
   display: flex;
@@ -14,8 +14,11 @@
 }
 
 .catalog__title {
+  position: relative;
+
   margin: 0;
-  padding: 75px 40px;
+  padding: 70px 40px;
+  padding-bottom: 76px;
   background: #f1f1f1;
 
   text-align: center;
@@ -29,31 +32,62 @@
 
 @media (min-width: $tablet-width) {
   .catalog__title {
-    padding: 55px 40px;
-    text-align: center;
+    padding: 78px 40px;
+    padding-top: 94px;
+    padding-left: 56px;
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: -13px;
+      left: 0;
+
+      width: 100%;
+      height: 50px;
+
+      background: url("../../img/svg/bg-zigzag-fill.svg") no-repeat -2px 100%;
+      background-size: 103%;
+      z-index: 1;
+    }
   }
 
   .catalog__wrapper {
     @include wrapper-tablet;
 
-    padding-top: 85px;
-    padding-bottom: 60px;
+    padding-top: 81px;
+    margin-bottom: 65px;
+  }
+
+  .catalog__cart {
+    margin-bottom: 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__title {
-    padding: 55px 40px;
+    padding: 92px 40px;
+    padding-left: 58px;
+    padding-bottom: 100px;
+
+    letter-spacing: -0.2px;
     font-size: 53px;
     line-height: 57px;
+
+    &::after {
+      height: 70px;
+      bottom: -22px;
+      background-position: -2px 100%;
+      background-size: 102%;
+    }
   }
 
   .catalog__wrapper {
     @include wrapper-desktop;
 
-    padding-top: 95px;
+    padding-top: 132px;
     flex-direction: row;
   }
 }

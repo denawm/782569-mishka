@@ -1,34 +1,84 @@
 .color-list {
-  padding: 30px 0;
-  padding-left: 60px;
+  padding-top: 36px;
+  padding-left: 62px;
 }
 
 .color-list__item {
-  margin-bottom: 35px;
+  margin-bottom: 43px;
+}
+
+.color-list__label {
+  position: relative;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: -62px;
+    top: -8px;
+
+    width: 36px;
+    height: 35px;
+
+    border: 2px solid black;
+  }
+}
+
+.color-list__checkbox:checked + .color-list__label::after {
+  content: "";
+
+  position: absolute;
+  left: -54px;
+  top: -3px;
+
+  width: 22px;
+  height: 23px;
+  background: url("../img/svg/icon-tick.svg") no-repeat -4px 1px;
 }
 
 @media (min-width: $tablet-width) {
   .color-list {
-    display: flex;
+    display: inline-flex;
+    margin-bottom: 12px;
     flex-wrap: wrap;
-    width: 500px;
+    width: 550px;
     padding: 0;
-    padding-left: 80px;
   }
 
   .color-list__item {
-    width: 250px;
+    width: 120px;
+    margin: 0;
+    padding-left: 82px;
+    margin-right: 60px;
+    margin-bottom: 57px;
   }
 
-  .contacts-list__label--color {
-    margin-right: 70px;
-    display: inline-block;
-    min-width: 65px;
+  .color-list__label::before {
+    left: -80px;
+    top: -12px;
+
+    width: 50px;
+    height: 48px;
+  }
+
+  .color-list__checkbox:checked + .color-list__label::after {
+    left: -68px;
+    top: 1px;
+
+    width: 31px;
+    height: 28px;
+    background-position: -1px 1px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .color-list {
     width: 800px;
+  }
+
+  .color-list__item {
+    padding-left: 84px;
   }
 }

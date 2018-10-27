@@ -19,18 +19,20 @@
 
 .form-list__title {
   margin: 0;
-  padding: 75px 35px;
-  background: #f1f1f1;
+  padding: 70px 35px;
+  padding-bottom: 76px;
 
   text-align: center;
   font-size: 27px;
   line-height: 30px;
+
+  background: #f1f1f1;
 }
 
-.form-list_text {
+.form-list__text {
   @include reset;
 
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   font-size: 13px;
   line-height: 24px;
@@ -39,23 +41,53 @@
 
 .form-list__wrapper {
   @include wrapper;
-  padding: 25px 30px;
+  padding: 22px 30px;
+  padding-bottom: 0;
+  margin-bottom: 29px;
 }
 
 .form-list__legend {
+  position: relative;
+
   margin: 0;
 
   line-height: 16px;
   font-weight: bold;
   text-transform: uppercase;
   color: #63d1bb;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 62px;
+
+    width: 198px;
+    height: 1px;
+
+    background: #62d1ba;
+  }
 }
 
 .form-list__block {
   padding: 0;
   margin: 0;
+  margin-bottom: 20px;
 
   border: none;
+
+  &--color {
+    margin-bottom: 0;
+  }
+
+  &--contacts {
+    margin-bottom: 7px;
+  }
+
+  &--textarea {
+    margin-bottom: 14px;
+  }
 }
 
 .form-list__required-text {
@@ -87,22 +119,47 @@
   .form-list__legend {
     display: inline-block;
     vertical-align: top;
-    margin-right: 115px;
-    width: 50px;
+    margin-right: 95px;
+    min-width: 65px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .form-list__wrapper {
     @include wrapper-tablet-max;
 
-    padding-top: 80px;
+    padding-top: 76px;
   }
 
   .form-list__title {
+    position: relative;
+
+    padding: 78px 40px;
+    padding-top: 92px;
+    padding-left: 56px;
+
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: -13px;
+      left: 0;
+
+      width: 100%;
+      height: 50px;
+
+      background: url("../../img/svg/bg-zigzag-fill.svg") no-repeat -2px 100%;
+      background-size: 103%;
+      z-index: 1;
+    }
   }
 
-  .form-list_text {
+  .form-list__text {
     margin: 0;
     padding: 0 50px;
 
@@ -111,42 +168,123 @@
   }
 
   .form-list__block {
-    padding: 65px 50px;
+    padding: 73px 50px;
+    padding-bottom: 0;
+    margin-bottom: 12px;
+
+    &--color {
+      margin: 0;
+      padding: 67px 51px;
+      padding-bottom: 0;
+      padding-right: 0;
+
+      background: #f1f1f1;
+    }
+
+    &--contacts {
+      margin-bottom: 11px;
+      padding-top: 65px;
+      padding-right: 5px;
+    }
+
+    &--textarea {
+      margin-bottom: 53px;
+      padding-top: 51px;
+      padding-right: 0;
+    }
   }
 
-  .form-list__block--color {
-    background: #f1f1f1;
-    padding-bottom: 0;
+  .form-list__block--contacts .form-list__legend {
+    margin-right: 98px;
+  }
+
+  .form-list__block--textaera .form-list__legend {
+    margin-right: 98px;
   }
 
   .form-list__btn-wrapper {
+    margin-bottom: 49px;
     display: flex;
     padding: 0 50px;
   }
 
   .form-list__btn {
+    margin: 0;
+    padding: 15px 30px;
     order: 1;
   }
 
   .form-list__required-text {
+    margin: 0;
     order: 2;
+    margin-top: 9px;
+    margin-left: auto;
+
     font-size: 17px;
     line-height: 30px;
-    margin-left: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-list__wrapper {
     @include wrapper-desktop-max;
+
+    padding-top: 125px;
   }
 
-  .form-list_text {
+  .form-list__title {
+    padding: 92px 40px;
+    padding-left: 57px;
+    padding-bottom: 100px;
+    font-size: 53px;
+    line-height: 57px;
+
+    &::after {
+      height: 70px;
+      bottom: -22px;
+      background-position: -2px 100%;
+      background-size: 102%;
+    }
+  }
+
+  .form-list__legend {
+    margin-right: 41px;
+  }
+
+  .form-list__text {
     padding: 0 225px;
   }
 
   .form-list__block {
-    padding: 65px 115px;
+    padding: 73px 113px;
+    padding-bottom: 0;
+    padding-right: 20px;
+    margin-bottom: 11px;
+
+    &--color {
+      padding: 66px 110px;
+      padding-bottom: 0;
+      padding-right: 20px;
+      margin-bottom: 11px;
+    }
+
+    &--contacts {
+      padding: 55px 110px;
+      padding-bottom: 0;
+      padding-right: 20px;
+      margin-bottom: 11px;
+    }
+
+    &--textarea {
+      padding: 39px 110px;
+      padding-bottom: 0;
+      padding-right: 20px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .form-list__block--contacts .form-list__legend {
+    margin-right: 48px;
   }
 
   .form-list__btn-wrapper {

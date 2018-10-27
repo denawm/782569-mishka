@@ -1,4 +1,6 @@
 .offers {
+  position: relative;
+
   color: $font-color;
   font-family: $font-base;
   background: #f9f9f9;
@@ -7,16 +9,16 @@
 .offers_wrapper {
   @include wrapper-max;
 
-  padding-top: 80px;
+  padding-top: 70px;
 
-  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% -16%;
 }
 
 .offers__title {
   @include reset;
 
   margin: 0 5px;
-  margin-bottom: 115px;
+  margin-bottom: 122px;
 
   font-size: 27px;
   line-height: 30px;
@@ -24,30 +26,54 @@
 }
 
 @media (min-width: $tablet-width) {
+  .offers::after {
+    content: "";
+
+    position: absolute;
+    bottom: -13px;
+
+    width: 100%;
+    height: 50px;
+
+    background: url("../img/svg/bg-zigzag-fill.svg") no-repeat -8px 100%;
+    background-size: 104%;
+    z-index: 1;
+  }
+
   .offers_wrapper {
     @include wrapper-tablet;
-    padding-top: 90px;
+    padding-top: 152px;
     background: url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
   }
 
   .offers__title {
     @include reset;
 
-    margin-bottom: 365px;
+    margin-bottom: 373px;
     font-size: 43px;
     line-height: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .offers::after {
+    bottom: -38px;
+
+    height: 70px;
+
+    background-position: -50px 51%;
+    background-size: 110%;
+  }
+
   .offers_wrapper {
     @include wrapper-desktop;
-    padding-top: 95px;
+
+    padding-top: 152px;
     background: url("../img/hero-desktop@1x.jpg") no-repeat 50% 0;
   }
 
   .offers__title {
-    margin-bottom: 345px;
+    margin-bottom: 359px;
     font-size: 53px;
     line-height: 57px;
   }

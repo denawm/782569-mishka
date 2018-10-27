@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   flex-direction: column;
 
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 0;
 }
 
@@ -37,7 +37,9 @@
 }
 
 .about-us__list-item {
-  margin-bottom: 85px;
+  position: relative;
+
+  margin-bottom: 83px;
   width: 200px;
 
   &--clear {
@@ -53,9 +55,40 @@
   }
 }
 
+.about-us__icon {
+  position: absolute;
+  left: 8px;
+  top: -53px;
+}
+
 .about-us__list-item--gift {
   width: 210px;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
+}
+
+.about-us__list-item--price .about-us__icon {
+  left: 0;
+  top: -52px;
+}
+
+.about-us__list-item--like .about-us__icon {
+  left: 8px;
+  top: -48px;
+}
+
+.about-us__list-item--clew .about-us__icon {
+  left: 4px;
+  top: -50px;
+}
+
+.about-us__list-item--rocket .about-us__icon {
+  left: -5px;
+  top: -49px;
+}
+
+.about-us__list-item--gift .about-us__icon {
+  left: 4px;
+  top: -51px;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,12 +96,16 @@
     @include wrapper-tablet;
 
     flex-direction: row;
-    justify-content: space-between;
-    padding-top: 55px;
+    padding-top: 50px;
+    margin-bottom: 83px;
   }
 
   .about-us__title {
     width: 100%;
+    margin-bottom: 103px;
+    margin-left: -4px;
+
+    letter-spacing: -0.3px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -76,10 +113,15 @@
   .about-us__list {
     font-size: 20px;
     line-height: 22px;
+    margin-right: 95px;
+  }
+
+  .about-us__list:last-child {
+    margin-right: 0;
   }
 
   .about-us__list-item {
-    margin-bottom: 85px;
+    margin-bottom: 111px;
     width: 215px;
 
     &--price {
@@ -98,15 +140,28 @@
       width: 240px;
     }
   }
+
+  .about-us__list-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .about-us__wrapper {
     width: 700px;
+    padding-top: 57px;
   }
 
   .about-us__title {
+    margin-left: 4px;
+    letter-spacing: -0.4px;
+
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .about-us__list {
+    margin-right: 102px;
+    margin-left: 8px;
   }
 }

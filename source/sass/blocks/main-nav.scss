@@ -15,8 +15,7 @@
 .main-nav__text {
   @include reset;
 
-  margin-top: 20px;
-  margin-left: auto;
+  display: none;
 
   font-size: 0;
   line-height: 24px;
@@ -26,34 +25,92 @@
 .main-nav__logo-wrapper {
   position: relative;
 
-  padding: 35px 115px;
+  padding: 20px 115px;
+  padding-bottom: 13px;
 
   background: $offer-color;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav__wrapper {
   display: flex;
   flex-direction: column;
-
-  @include wrapper-max;
 }
 
 .main-nav__toggle {
   position: absolute;
+  top: 15px;
+  right: 21px;
+  background: transparent;
+
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  width: 20px;
+  height: 2px;
+
+  background-color: #000000;
+  box-shadow: 0 6px 0 0 #000000,
+    0 12px 0 0 #000000;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 23px;
+    left: 9px;
+
+    width: 22px;
+    height: 2px;
+
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-body .main-nav {
-    background: #f1f1f1;
-  }
-
   .main-nav {
-    background: #f9f9f9;
+    position: absolute;
+    top: -90px;
+
+    background: transparent;
   }
 
   .main-nav__wrapper {
-    @include wrapper-tablet-max;
-
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -61,9 +118,9 @@
 
   .main-nav__logo-wrapper {
     order: 1;
-    padding: 20px 210px 18px 50px;
+    padding: 26px 207px 16px 50px;
 
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .main-nav__toggle {
@@ -71,6 +128,11 @@
   }
 
   .main-nav__text {
+    display: block;
+    margin-top: 17px;
+    margin-left: auto;
+    margin-right: 50px;
+
     font-size: 15px;
     order: 5;
   }
@@ -85,14 +147,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    @include wrapper-desktop-max;
-  }
-
   .main-nav__list {
     @include reset;
 
-    padding-left: 50px;
     order: 1;
 
     background: #ffffff;
@@ -104,7 +161,7 @@
 
   .main-nav__logo-wrapper {
     order: 2;
-    padding: 20px 110px 18px 55px;
+    padding: 24px 122px 18px 55px;
   }
 
   .main-nav__list-hidden {
@@ -112,6 +169,6 @@
   }
 
   .main-nav__text {
-    margin-right: 100px;
+    margin-right: 50px;
   }
 }
