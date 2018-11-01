@@ -8,8 +8,6 @@
 
 .main-nav__logo {
   display: inline-block;
-  width: 113px;
-  height: 46px;
 }
 
 .main-nav__text {
@@ -25,8 +23,8 @@
 .main-nav__logo-wrapper {
   position: relative;
 
-  padding: 20px 115px;
-  padding-bottom: 13px;
+  padding: 22px 115px;
+  padding-bottom: 19px;
 
   background: $offer-color;
   border-bottom: 1px solid #ececec;
@@ -110,6 +108,12 @@
     background: transparent;
   }
 
+
+  .main-nav__logo-svg {
+    width: 113px;
+    height: 46px;
+  }
+
   .main-nav__wrapper {
     flex-direction: row;
     align-items: flex-start;
@@ -118,7 +122,7 @@
 
   .main-nav__logo-wrapper {
     order: 1;
-    padding: 26px 207px 16px 50px;
+    padding: 22px 209px 17px 48px;
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
@@ -161,7 +165,12 @@
 
   .main-nav__logo-wrapper {
     order: 2;
-    padding: 24px 122px 18px 55px;
+    padding: 9px 101px 3px 40px;
+  }
+
+  .main-nav__logo-svg {
+    width: 149px;
+    height: 73px;
   }
 
   .main-nav__list-hidden {

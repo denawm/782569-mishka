@@ -8,6 +8,8 @@
   @include wrapper;
 
   padding: 30px;
+  padding-bottom: 0;
+  margin-bottom: 28px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -58,7 +60,7 @@
     @include wrapper-tablet;
 
     padding-top: 81px;
-    margin-bottom: 65px;
+    margin-bottom: 63px;
   }
 
   .catalog__cart {

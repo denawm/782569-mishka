@@ -30,7 +30,7 @@
   padding-top: 27px;
 }
 
-.product-week__image {
+.product-week__image-block {
   order: 3;
 }
 
@@ -175,7 +175,9 @@
   .product-week__image-week {
     height: 404px;
     width: 333px;
+  }
 
+  .product-week__image-block {
     margin-top: 52px;
     margin-left: 40px;
   }
@@ -232,6 +234,9 @@
   .product-week__image-week {
     height: 636px;
     width: 525px;
+  }
+
+  .product-week__image-block {
     margin-top: -114px;
     margin-left: 55px;
   }
