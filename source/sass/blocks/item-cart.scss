@@ -8,6 +8,17 @@
   font-family: $font-base;
   color: $font-color;
   font-size: $font-size;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(#000000, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(#000000, 0.1);
+  }
+
+  transition: all 0.5s;
 }
 
 .item-cart__name {
@@ -39,6 +50,18 @@
   position: absolute;
   top: 133px;
   left: 78px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+
+  transition: all 0.5s;
 }
 
 .item-cart__price {
@@ -223,6 +246,7 @@
   .item-cart__wrapper {
     margin: 0;
     padding: 25px;
+    padding-bottom: 26px;
     width: auto;
     max-width: 315px;
     min-height: 145px;

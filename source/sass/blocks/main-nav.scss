@@ -8,6 +8,19 @@
 
 .main-nav__logo {
   display: inline-block;
+
+  cursor: pointer;
+
+  &:hover[href],
+  &:focus[href] {
+    opacity: 0.6;
+  }
+
+  &:active[href] {
+    opacity: 0.3;
+  }
+
+  transition: all 0.5s;
 }
 
 .main-nav__text {

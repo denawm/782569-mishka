@@ -45,6 +45,19 @@
 
 .page-footer__logo {
   display: none;
+  cursor: pointer;
+
+  &:hover svg,
+  &:focus svg {
+    fill: #62d1ba;
+    transition: all 0.5s;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  transition: all 0.5s;
 }
 
 @media (min-width: $tablet-width) {

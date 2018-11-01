@@ -65,6 +65,8 @@
   &:active {
     opacity: 0.3;
   }
+
+  transition: all 0.5s;
 }
 
 .site-list__a[href] {

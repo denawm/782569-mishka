@@ -102,6 +102,12 @@
     padding-top: 22px;
     padding-bottom: 17px;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 .contacts-list__textarea {
@@ -112,6 +118,12 @@
 
   border: 2px solid black;
   resize: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 
