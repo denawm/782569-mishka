@@ -44,36 +44,20 @@
   position: relative;
 
   margin-bottom: 22px;
+}
 
-  &--tel {
-    &::after {
-      content: "";
-      position: absolute;
-      right: -7px;
-      top: 36px;
+.contact-list__icon--phone {
+  position: absolute;
+  right: 8px;
+  top: 35px;
+  opacity: 0.2;
+}
 
-      width: 40px;
-      height: 40px;
-
-      background: url("../../img/svg/icon-phone.svg") no-repeat;
-      opacity: 0.2;
-    }
-  }
-
-  &--email {
-    &::after {
-      content: "";
-      position: absolute;
-      right: -4px;
-      top: 36px;
-
-      width: 40px;
-      height: 40px;
-
-      background: url("../../img/svg/icon-mail.svg") no-repeat;
-      opacity: 0.2;
-    }
-  }
+.contact-list__icon--email {
+  position: absolute;
+  right: 4px;
+  top: 36px;
+  opacity: 0.2;
 }
 
 .contacts-list--color .contacts-list__item {
@@ -107,6 +91,13 @@
   &:focus,
   &:active {
     border-color: #62d1ba;
+  }
+
+  &:hover + .contact-list__icon,
+  &:focus + .contact-list__icon,
+  &:active + .contact-list__icon {
+    fill: #62d1ba;
+    opacity: 1;
   }
 }
 
@@ -182,20 +173,16 @@
   .contacts-list__item {
     display: flex;
     margin-bottom: 39px;
+  }
 
-    &--tel {
-      &::after {
-        right: 11px;
-        top: -6px;
-      }
-    }
+  .contact-list__icon--phone {
+    right: 26px;
+    top: -6px;
+  }
 
-    &--email {
-      &::after {
-        right: 14px;
-        top: -6px;
-      }
-    }
+  .contact-list__icon--email {
+    right: 22px;
+    top: -6px;
   }
 
   .contacts-list__textarea {
@@ -239,19 +226,11 @@
     margin-right: 50px;
   }
 
-  .contacts-list__item {
-    &--tel {
-      &::after {
-        right: -7px;
-        top: -6px;
-      }
-    }
+  .contact-list__icon--email {
+    right: 8px;
+  }
 
-    &--email {
-      &::after {
-        right: -4px;
-        top: -6px;
-      }
-    }
+  .contact-list__icon--phone {
+    right: 4px;
   }
 }
