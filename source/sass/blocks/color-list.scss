@@ -24,6 +24,20 @@
 
     border: 2px solid black;
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: #62d1ba;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #000000;
+      opacity: 0.3;
+    }
+  }
 }
 
 .color-list__checkbox:checked + .color-list__label::after {

@@ -26,6 +26,20 @@
     border: 2px solid black;
     border-radius: 50%;
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: #62d1ba;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #000000;
+      opacity: 0.3;
+    }
+  }
 }
 
 .type-list__radio:checked + .type-list__label::after {

@@ -1,20 +1,28 @@
 .modal-basket {
+  @include wrapper;
+
+  position: fixed;
+  left: 50%;
+  top: 340px;
+
   display: none;
+  margin-left: -161px;
 
   font-family: $font-base;
   color: $font-color;
   font-size: $font-size;
+  background: #ffffff;
 
+  box-shadow: 0 5px 10px rgba(#000000, 0.25);
   border: 1px solid #c6c6c6;
-
-  @include wrapper;
+  z-index: 20;
 }
 
 .modal-basket__title {
   padding: 0;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 31px;
+  margin-bottom: 12px;
   width: 155px;
 
   font-size: 25px;
@@ -26,6 +34,7 @@
 .modal-basket__text {
   padding: 0;
   margin: 0 auto;
+  margin-bottom: 23px;
   width: 135px;
 
   font-size: 15px;
@@ -34,8 +43,8 @@
 }
 
 .modal-basket__btn {
-  padding: 15px 82px;
-  margin-bottom: 50px;
+  padding: 16px 81px;
+  margin-bottom: 46px;
 
   font-family: $font-base;
   font-size: $font-size;
@@ -43,4 +52,34 @@
   color: #ffffff;
   border: none;
   background: #63d1bb;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-basket {
+    min-width: 348px;
+    padding: 0 109px;
+    margin-left: -276px;
+  }
+
+  .modal-basket__title {
+    margin: 0;
+    margin-top: 32px;
+    width: 380px;
+    text-align: start;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal-basket__text {
+    width: 170px;
+    margin: 14px 98px;
+    margin-bottom: 21px;
+
+    font-size: 17px;
+  }
+
+  .modal-basket__btn {
+    padding: 17px 127px;
+  }
 }

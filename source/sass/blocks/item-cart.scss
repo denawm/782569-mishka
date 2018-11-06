@@ -8,6 +8,17 @@
   font-family: $font-base;
   color: $font-color;
   font-size: $font-size;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(#000000, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(#000000, 0.1);
+  }
+
+  transition: all 0.5s;
 }
 
 .item-cart__name {
@@ -29,8 +40,28 @@
 }
 
 .item-cart--video {
+  position: relative;
+
   background: url("../img/svg/icon-video.svg") no-repeat 33px 30px;
   border: 1px solid #ededed;
+}
+
+.item-cart__video-button {
+  position: absolute;
+  top: 133px;
+  left: 78px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+
+  transition: all 0.5s;
 }
 
 .item-cart__price {
@@ -80,7 +111,7 @@
 }
 
 .item-cart__video-wrapper {
-  padding: 26px 10px 31px 33px;
+  padding: 24px 10px 33px 33px;
 }
 
 .item-cart__video-btn {
@@ -172,10 +203,15 @@
     order: 1;
   }
 
+  .item-cart__video-img {
+    width: 100%;
+    min-height: 455px;
+  }
+
   .item-cart__video-name {
     order: 2;
     font-size: 20px;
-    margin: 40px 25px 0 106px;
+    margin: 37px 25px 0 106px;
   }
 
   .item-cart__video-wrapper {
@@ -195,9 +231,14 @@
     padding: 15px 221px;
   }
 
+  .item-cart__video-button {
+    top: 191px;
+    left: 282px;
+  }
+
   .item-cart__image img {
     width: 334px;
-    height: 334px;
+    height: 333px;
   }
 }
 
@@ -205,6 +246,7 @@
   .item-cart__wrapper {
     margin: 0;
     padding: 25px;
+    padding-bottom: 26px;
     width: auto;
     max-width: 315px;
     min-height: 145px;
@@ -241,13 +283,18 @@
     width: 1050px;
     min-height: 453px;
     max-width: 1050px;
-    margin-bottom: 105px;
+    margin-bottom: 104px;
 
     background-position: 761px 42px;
   }
 
   .item-cart__video-video {
     order: 1;
+    width: 682px;
+    height: 455px;
+  }
+
+  .item-cart__video-img {
     width: 682px;
     height: 455px;
   }
@@ -279,6 +326,11 @@
 
   .item-cart__video-btn {
     padding: 14px 44px;
+  }
+
+  .item-cart__video-button {
+    top: 190px;
+    left: 290px;
   }
 
   .item-cart__image img {

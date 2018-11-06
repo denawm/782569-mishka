@@ -20,6 +20,25 @@
   align-items: flex-start;
 }
 
+.contacts__mail {
+  padding-bottom: 4px;
+
+  color: #444444;
+  font-size: 15px;
+  line-height: 30px;
+  text-decoration: none;
+  border-bottom: 1px solid #62d1ba;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
@@ -41,10 +60,6 @@
   width: 74px;
 
   vertical-align: top;
-}
-
-.contacts__adress--line {
-  border-bottom: 1px solid #62d1ba;
 }
 
 .contacts__button {
@@ -87,6 +102,10 @@
     margin-left: -4px;
     margin-top: 43px;
 
+    font-size: 17px;
+  }
+
+  .contacts__mail {
     font-size: 17px;
   }
 

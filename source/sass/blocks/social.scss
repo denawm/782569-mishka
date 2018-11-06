@@ -16,6 +16,7 @@
   &:hover path,
   &:focus path {
     fill: #51c4b2;
+    transition: all 0.5s;
   }
 
   &:active {

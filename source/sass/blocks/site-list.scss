@@ -20,6 +20,16 @@
   text-decoration: none;
 }
 
+.site-list__search {
+  border: none;
+
+  &::placeholder {
+    font-family: $font-base;
+    color: $font-color;
+    font-size: $font-size;
+    font-weight: bold;
+  }
+}
 
 .site-list__basket-icon {
   position: absolute;
@@ -55,6 +65,8 @@
   &:active {
     opacity: 0.3;
   }
+
+  transition: all 0.5s;
 }
 
 .site-list__a[href] {

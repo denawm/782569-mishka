@@ -39,6 +39,11 @@
   }
 }
 
+.offer-list__item:hover {
+  margin-top: -5px;
+  transition: all 0.2s;
+}
+
 .offer-list__icon {
   position: absolute;
   opacity: 0.5;
