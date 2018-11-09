@@ -17,7 +17,7 @@
     height: 50px;
 
     transform: rotate(180deg);
-    background: url("/../img/svg/bg-zigzag-line.svg") no-repeat -16px 100%;
+    background: url("../img/svg/bg-zigzag-line.svg") no-repeat -16px 100%;
     background-size: 115%;
   }
 }
@@ -204,6 +204,7 @@
     padding-bottom: 95px;
 
     &::after {
+      left: 0;
       bottom: -26px;
       background-position: 25px 100%;
       background-size: 94% 21px;
