@@ -12,7 +12,8 @@
 .offer-list__btn {
   position: relative;
 
-  width: 100%;
+  display: inline-block;
+  width: 130px;
   padding: 27px;
   padding-bottom: 28px;
   padding-right: 163px;
@@ -25,17 +26,29 @@
   font-weight: bold;
   text-align: left;
 
-  border: none;
+  text-decoration: none;
   cursor: pointer;
   background: transparent;
 
+  &--interior {
+    background: #63d1bb;
+  }
+
+  &--toys {
+    background: #56c3b2;
+  }
+
   &:hover svg,
   &:focus svg {
-    opacity: 0.3;
+    opacity: 0.7;
   }
 
   &:active {
-    opacity: 0.4;
+    color: rgba(#ffffff, 0.3);
+  }
+
+  &:active svg {
+    opacity: 0.3;
   }
 }
 
@@ -47,14 +60,6 @@
 .offer-list__icon {
   position: absolute;
   opacity: 0.5;
-}
-
-.offer-list__item--interior {
-  background: #63d1bb;
-}
-
-.offer-list__item--toys {
-  background: #56c3b2;
 }
 
 .offer-list__btn--interior .offer-list__icon {
@@ -72,16 +77,20 @@
     flex-direction: row;
   }
 
+  .offer-list__item--interior{
+    background: #63d1bb;
+  }
+  .offer-list__item--toys {
+    background: #56c3b2;
+  }
+
   .offer-list__btn {
     padding-left: 35px;
     padding-bottom: 30px;
+    padding-right: 169px;
 
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .offer-list__item {
-    width: 50%;
   }
 
   .offer-list__btn--interior .offer-list__icon {
@@ -97,6 +106,6 @@
 
 @media (min-width: $desktop-width) {
   .offer-list__btn {
-    padding-right: 310px;
+    padding-right: 360px;
   }
 }
