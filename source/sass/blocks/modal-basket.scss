@@ -54,6 +54,43 @@
   background: #63d1bb;
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: none;
+
+  width: 100%;
+  height: 100%;
+  z-index: 19;
+  background: rgba(#ffffff, 0.8);
+}
+
+.overlay-show {
+  display: block;
+  animation-name: back;
+  animation-duration: 0.5s;
+}
+
+@keyframes back {
+  0% {transform: scale(0.1, 0.1)}
+  100% {transform: scale(1, 1)}
+}
+
+.modal-show{
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.5s;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(2000px)}
+  50% {transform: scale(0.1, 0.1)}
+  70% {transform: translateY(30px)}
+  100% {transform: translateY(0px)}
+}
+
 @media (min-width: $tablet-width) {
   .modal-basket {
     min-width: 348px;
