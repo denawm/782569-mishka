@@ -24,9 +24,13 @@
 .item-cart__name {
   @include reset;
 
-  font-size: 17px;
-  line-height: 24px;
   margin-bottom: 5px;
+
+  font-weight: bold;
+  font-size: 17px;
+  color: $font-color;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 .item-cart__text {
