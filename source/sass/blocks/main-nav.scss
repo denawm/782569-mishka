@@ -130,6 +130,8 @@
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+
+    width: 768px;
   }
 
   .main-nav__logo-wrapper {
@@ -169,6 +171,10 @@
     order: 1;
 
     background: #ffffff;
+  }
+
+  .main-nav__wrapper {
+    width: 1150px;
   }
 
   .main-nav__list-second {

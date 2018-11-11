@@ -25,13 +25,13 @@ for(var i = 0; i < basket_btn.length; i++){
 });
 }
 
+overlay.addEventListener("click", function(){
+  overlay.classList.remove("overlay-show");
+  popup_basket.classList.remove("modal-show");
+});
+
 order_btn.addEventListener("click", function(evt){
   evt.preventDefault();
   popup_basket.classList.add("modal-show");
   overlay.classList.add("overlay-show");
-});
-
-overlay.addEventListener("click", function(){
-  overlay.classList.remove("overlay-show");
-  popup_basket.classList.remove("modal-show");
 });

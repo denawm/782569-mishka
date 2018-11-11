@@ -3,7 +3,7 @@
 
   position: fixed;
   left: 50%;
-  top: 340px;
+  top: 150px;
 
   display: none;
   margin-left: -161px;
@@ -109,6 +109,8 @@
 
 @media (min-width: $tablet-width) {
   .modal-basket {
+    top: 290px;
+
     min-width: 348px;
     padding: 0 109px;
     margin-left: -276px;
