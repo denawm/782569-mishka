@@ -17,7 +17,7 @@
     height: 50px;
 
     transform: rotate(180deg);
-    background: url("/../img/svg/bg-zigzag-line.svg") no-repeat -16px 100%;
+    background: url("../img/svg/bg-zigzag-line.svg") no-repeat -16px 100%;
     background-size: 115%;
   }
 }
@@ -179,7 +179,7 @@
 
   .product-week__image-block {
     margin-top: 52px;
-    margin-left: 40px;
+    margin-left: 39px;
   }
 
   .product-week__table {
@@ -204,9 +204,10 @@
     padding-bottom: 95px;
 
     &::after {
+      left: 9px;
       bottom: -26px;
-      background-position: 25px 100%;
-      background-size: 94% 21px;
+      background-position: 50% 100%;
+      background-size: 1050px 21px;
     }
   }
 

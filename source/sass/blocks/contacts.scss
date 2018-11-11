@@ -14,7 +14,8 @@
   margin: 0;
   padding: 0 25px;
   padding-top: 35px;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
+  padding-right: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -48,6 +49,7 @@
   @include reset;
 
   margin-top: 21px;
+  width: 275px;
 
   font-size: 15px;
   line-height: 30px;
@@ -75,6 +77,33 @@
   vertical-align: top;
 }
 
+
+.contacts__map {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 146px;
+    left: 138px;
+
+    width: 80px;
+    height: 100px;
+
+    background: url("../../img/svg/icon-map-pin.svg") no-repeat;
+  }
+}
+
+.contacts__map-google {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 4;
+  border: none;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     @include wrapper-tablet-max;
@@ -82,7 +111,7 @@
     padding-top: 63px;
     margin-bottom: 57px;
 
-    background: url("../../img/svg/icon-flag.svg") no-repeat 668px 47px;
+    background: url("../img/svg/icon-flag.svg") no-repeat 668px 47px;
   }
 
   .contacts__wrapper {
@@ -99,6 +128,7 @@
   }
 
   .contacts__table {
+    width: auto;
     margin-left: -4px;
     margin-top: 43px;
 
@@ -140,6 +170,15 @@
     width: 315px;
     margin-right: 0;
   }
+
+  .contacts__map::after {
+    top: 139px;
+    left: 363px;
+  }
+
+  .contacts__map-google {
+    width: 768px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -175,6 +214,11 @@
 
   .contacts__map {
     margin-left: auto;
+
+    &::after {
+      top: 145px;
+      left: 239px;
+    }
   }
 
   .contacts__table {
@@ -197,5 +241,10 @@
     margin: 0;
     margin-top: -55px;
     margin-left: 175px;
+  }
+
+  .contacts__map-google {
+    width: 525px;
+    height: 460px;
   }
 }
