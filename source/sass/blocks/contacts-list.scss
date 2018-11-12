@@ -46,14 +46,14 @@
   margin-bottom: 22px;
 }
 
-.contact-list__icon--phone {
+.contacts-list__icon--phone {
   position: absolute;
   right: 8px;
   top: 35px;
   opacity: 0.2;
 }
 
-.contact-list__icon--email {
+.contacts-list__icon--email {
   position: absolute;
   right: 4px;
   top: 36px;
@@ -72,14 +72,24 @@
 
   font-size: 17px;
   line-height: 18px;
-
   border: none;
   border-bottom: 2px solid black;
+
+  &::placeholder {
+    font-family: $font-base;
+    color: rgba(#000000, 0.3);
+    font-size: 17px;
+    line-height: 18px;
+  }
 
   &--phone {
     padding-top: 18px;
     padding-bottom: 13px;
     font-size: 19px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 
   &--email {
@@ -91,11 +101,12 @@
   &:focus,
   &:active {
     border-color: #62d1ba;
+    outline: 0;
   }
 
-  &:hover + .contact-list__icon,
-  &:focus + .contact-list__icon,
-  &:active + .contact-list__icon {
+  &:hover + .contacts-list__icon,
+  &:focus + .contacts-list__icon,
+  &:active + .contacts-list__icon {
     fill: #62d1ba;
     opacity: 1;
   }
@@ -114,6 +125,13 @@
   &:focus,
   &:active {
     border-color: #62d1ba;
+  }
+
+  &::placeholder {
+    font-family: $font-base;
+    color: rgba(#000000, 0.3);
+    font-size: 17px;
+    line-height: 18px;
   }
 }
 
@@ -147,6 +165,10 @@
 
     font-size: 19px;
     background: transparent;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 
   .contacts-list--color .contacts-list__item {
@@ -175,12 +197,12 @@
     margin-bottom: 39px;
   }
 
-  .contact-list__icon--phone {
+  .contacts-list__icon--phone {
     right: 26px;
     top: -6px;
   }
 
-  .contact-list__icon--email {
+  .contacts-list__icon--email {
     right: 22px;
     top: -6px;
   }
@@ -190,6 +212,10 @@
     min-height: 141px;
     box-sizing: border-box;
     margin: 0;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 
   .contacts-list__label--color {
@@ -226,11 +252,11 @@
     margin-right: 50px;
   }
 
-  .contact-list__icon--email {
+  .contacts-list__icon--email {
     right: 4px;
   }
 
-  .contact-list__icon--phone {
+  .contacts-list__icon--phone {
     right: 8px;
   }
 }
