@@ -14,10 +14,10 @@
 
   display: inline-block;
   width: 130px;
-  padding: 27px;
-  padding-bottom: 28px;
+  padding-top: 26px;
   padding-right: 163px;
-
+  padding-bottom: 29px;
+  padding-left: 27px;
 
   font-size: 19px;
   line-height: 24px;
@@ -52,11 +52,6 @@
   }
 }
 
-.offer-list__item:hover {
-  margin-top: -5px;
-  transition: all 0.2s;
-}
-
 .offer-list__icon {
   position: absolute;
   opacity: 0.5;
@@ -87,7 +82,7 @@
 
   .offer-list__btn {
     padding-left: 35px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     padding-right: 169px;
 
     font-size: 20px;
@@ -102,6 +97,11 @@
   .offer-list__btn--toys .offer-list__icon {
     right: 34px;
     top: 32px;
+  }
+
+  .offer-list__item:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s;
   }
 }
 

@@ -35,20 +35,20 @@
     content: "";
 
     position: absolute;
-    bottom: -12px;
+    bottom: -8px;
 
     width: 100%;
     height: 50px;
 
-    background: url("../img/svg/bg-zigzag-fill.svg") no-repeat -3px 100%;
-    background-size: 103%;
+    background: url("../img/svg/bg-zigzag-fill.svg") no-repeat 1px 100%;
+    background-size: 102%;
     z-index: 1;
   }
 
   .offers_wrapper {
     @include wrapper-tablet;
     padding-top: 152px;
-    background: url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
+    background: url("../img/hero-tablet@1x.jpg") no-repeat 50% -2px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/hero-tablet@2x.jpg") no-repeat 50% 0;
@@ -67,7 +67,7 @@
 
 @media (min-width: $desktop-width) {
   .offers::after {
-    bottom: -38px;
+    bottom: -34px;
 
     height: 70px;
 
