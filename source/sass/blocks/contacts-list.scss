@@ -125,6 +125,7 @@
   &:focus,
   &:active {
     border-color: #62d1ba;
+    outline: 0;
   }
 
   &::placeholder {
