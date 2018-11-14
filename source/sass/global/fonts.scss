@@ -1,17 +1,19 @@
 @font-face {
   font-family: "OpenSans";
+  font-weight: normal;
+  font-style: normal;
   src: local("OpenSans"),
     url("../fonts/opensans.woff") format("woff"),
     url("../fonts/opensans.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "OpenSans";
+  font-weight: bold;
+  font-style: normal;
   src: local("OpenSans"),
     url("../fonts/opensansbold.woff") format("woff"),
     url("../fonts/opensansbold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
+  font-display: swap;
 }
